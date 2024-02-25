@@ -1,0 +1,22 @@
+/* Slider.css */
+
+.slider-container {
+    margin-left: 30%;
+}
+
+  .slider-image {
+    transition: transform 0.3s ease;
+    max-width: 60%;
+}
+
+  .slider-button {    
+    transition: background-color 0.2s ease;
+    margin-right: 5%;
+    margin-top: 1%;
+    max-width: 30%;
+  }
+  
+  .slider-button:hover {
+    background-color: #0056b3;
+  }
+  
