@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import '../styles/slider.css';
+import '../styles/framework.css';
 
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

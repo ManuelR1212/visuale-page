@@ -10,7 +10,7 @@ import Components from './pages/comps/components';
 function App() {
   return (
     <>
-    <Router>
+    <BrowserRouter basename='/visuale-page'>
        <Routes>
         <Route index element={<Home/>} />
         <Route path="/home" element={<Home/>} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/grids" element={<Grids/>} />
         <Route path="/components" element={<Components/>} />
        </Routes>
-    </Router>
+    </BrowserRouter>
 
     </>
   );

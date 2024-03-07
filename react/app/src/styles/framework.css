@@ -17,6 +17,10 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
 }
 
+a {
+text-decoration: none;
+}
+
 
 /* ||||||||||||||||||||||||
           VARIABLES
@@ -73,8 +77,33 @@ h1,h2,h3,h4,h5,h6 {
    |||||||||||||||||||||||| */
 
 .d-flex {display: flex;}
+
+.d-block {display: block;}
+
 .items-center {align-items: center;}
 
+.d-none {display: none;}
+
+.pos-absolute {
+    position: absolute;
+}
+
+
+/* Tablets Size | Tamaño Tabletas */
+
+@media screen and (max-width: 992px) {
+    .tab-d-none {
+        display: none;
+    }
+ }
+        
+    /* SmartPhone Size | Tamaño Teléfono Inteligente */
+        
+    @media screen and (max-width: 576px) {
+        .smt-d-none {
+            display: none;
+        }        
+ }  
 
 /* ||||||||||||||||||||||||
  DISEÑO GENERAL | GENERAL DESIGN
@@ -491,6 +520,13 @@ p {
     overflow-y: scroll; 
     max-height: 300px;}
 
+.cont-scroll-2 {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-height: 400px;
+    max-width: 1000px;
+}
+
 
 
 
@@ -512,6 +548,20 @@ p {
 
 .nav {
     display: flex;
+}
+
+/* SmartPhone Size | Tamaño Teléfono Inteligente */
+
+@media screen and (max-width: 576px) {
+.nav-mobile {
+    align-items: center;
+}
+
+.nav-mobile p {
+    position: fixed;
+    top: -1000px;
+}
+
 }
 
 .nav .container-1 {
@@ -544,6 +594,12 @@ p {
 .nav a.main,
 .nav a:hover {
     background: var(--gray300);
+}
+
+@media screen and (max-width: 576px) {
+.nav a:hover {
+    background:none;
+}
 }
 
 
@@ -1005,7 +1061,149 @@ form .inp:focus {
     padding: 8px;
 }
 
+/* ||||||||||||||||||||||||
+    Footer | Pie de página
+   |||||||||||||||||||||||| */
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .footer-links a:hover {
+    background: var(--gray100);
+    border-radius: 999px;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+
+
+/* ||||||||||||||||||||||||
+Searchbar | Barra de búsqueda
+   |||||||||||||||||||||||| */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+.searchbar-input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+.searchbar-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+/* ||||||||||||||||||||||||
+          JUMBOTRON
+   |||||||||||||||||||||||| */
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .jumbotron p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+/* ||||||||||||||||||||||||
+          BREADCRUMS
+   |||||||||||||||||||||||| */
+
+.breadcrumbs {
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumbs li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+
+/* ||||||||||||||||||||||||
+            MODALS
+   |||||||||||||||||||||||| */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal.visible {
+    display: block;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
 
 /* ||||||||||||||||||||||||
       BUTTONS | BOTONES
@@ -1030,6 +1228,205 @@ form .inp:focus {
 .border-none {
     border: none;
 }   
+
+
+/* ||||||||||||||||||||||||
+      ACCORDION | ACORDION
+   |||||||||||||||||||||||| */
+
+
+.accordion {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .accordion__button {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion__button.open {
+    background-color: #e0e0e0;
+  }
+  
+  .accordion__content {
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+
+/* ||||||||||||||||||||||||
+      SLIDER | SLIDER
+   |||||||||||||||||||||||| */
+
+
+  .slider-container {
+    margin-left: 30%;
+}
+
+  .slider-image {
+    transition: transform 0.3s ease;
+    max-width: 60%;
+}
+
+  .slider-button {    
+    transition: background-color 0.2s ease;
+    margin-right: 5%;
+    margin-top: 1%;
+    max-width: 30%;
+  }
+  
+  .slider-button:hover {
+    background-color: #0056b3;
+  }
+
+  
+/* ||||||||||||||||||||||||
+    SIDEBAR | BARRA LATERAL
+   |||||||||||||||||||||||| */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 200px;
+    height: 100vh;
+    background-color: #1f2937;
+    transition: left 0.3s ease; 
+    overflow-y: scroll; 
+  }
+  
+  .hover:hover {
+    background: #374151;
+  }
+  
+  .sidebar.active {
+    left: 0; 
+  }
+  
+  .desplegable {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 36px;
+    color: white;
+  
+    margin-right: 0;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
+  
+  .desplegable:hover {
+    background-color: #374151;
+    border-radius: 9999px;
+  }
+
+    /* Tablets Size | Tamaño Tabletas */
+  
+  @media screen and (max-width: 992px) {
+    .tab-desplegable {
+      background-color: red;
+      font-size: 36px;
+      color: white;
+    
+      margin-right: 0;
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+        
+    }
+    }
+    
+    /* SmartPhone Size | Tamaño Teléfono Inteligente */
+    
+    @media screen and (max-width: 576px) {
+    .smt-desplegable {
+      background-color: transparent;
+      font-size: 24px;
+      color: white;
+    
+      margin-right: 0;
+      margin-top: 1.7rem;
+      margin-left: 1rem;
+        
+    }
+    }
+
+
+  /*||||||||||||||||||||||||
+    SIDENAV | NAVBAR LATERAL
+   |||||||||||||||||||||||| */
+
+    .sidenav {
+     position: fixed;
+     top: 0;
+     right: -500px; 
+     width: 200px;
+     height: 100vh;
+     background-color: #1f2937;
+     transition: left 0.3s ease; 
+     overflow-y: scroll; 
+   }
+   
+   .hover:hover {
+     background: #374151;
+   }
+   
+   .sidenav.active {
+     right: 0; 
+   }
+   
+   .sidenav-button {
+     background-color: transparent;
+     border: none;
+     box-shadow: none;
+     font-size: 0px;
+     color: white;
+   
+     margin-right: 0;
+     margin-top: 2rem;
+     margin-left: 0.5rem;
+   }
+   
+ 
+ @media screen and (max-width: 576px) {
+
+   .sidenav {
+    position: fixed;
+    top: 0;
+    right: -500px; 
+    width: 200px;
+    height: 100vh;
+    background-color: #1f2937;
+    transition: right 0.3s ease; 
+    overflow-y: scroll; 
+  }
+  
+  .hover:hover {
+    background: #374151;
+  }
+  
+  .sidenav.active {
+    right: 0; 
+  }
+  
+  .sidenav-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+    color: white;
+    margin-right: 0;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+
+  
+ }
 
    
 /* SOLID BORDERS | BORDES SOLIDOS */
@@ -1750,7 +2147,7 @@ TABLE HEAD BORDERS | BORDES CABECERA TABLAS
 
 }
 
-/* High Size | Semi Grande */
+/* High Size | Grande */
 
 @media screen and (max-width: 1920px) {
 
@@ -1902,6 +2299,205 @@ TABLE HEAD BORDERS | BORDES CABECERA TABLAS
 .bottom-margin-10 {margin-bottom: 4em;} /*64px*/
 .bottom-margin-11 {margin-bottom: 6em;} /*96px*/
 .bottom-margin-12 {margin-bottom: 8em;} /*128px*/
+
+
+/* High Size | Grande */
+
+@media screen and (max-width: 1920px) { 
+
+.hg-top-margin-auto {margin-top: auto;}
+.hg-top-margin-0 {margin-top: 0;}
+.hg-top-margin-1 {margin-top: 0.125em;} /*2px*/
+.hg-top-margin-2 {margin-top: 0.25em;} /*4px*/
+.hg-top-margin-3 {margin-top: 0.375em;} /*6px*/
+.hg-top-margin-4 {margin-top: 0.5em;} /*8px*/
+.hg-top-margin-5 {margin-top: 0.75em;} /*12px*/
+.hg-top-margin-6 {margin-top: 1em;} /*16px*/
+.hg-top-margin-7 {margin-top: 1.5em;} /*24px*/
+.hg-top-margin-8 {margin-top: 1.75em;} /*28px*/
+.hg-top-margin-9 {margin-top: 2em;} /*32px*/
+.hg-top-margin-10 {margin-top: 4em;} /*64px*/
+.hg-top-margin-11 {margin-top: 6em;} /*96px*/
+.hg-top-margin-12 {margin-top: 8em;} /*128px*/
+
+.hg-left-margin-auto {margin-left: auto;}
+.hg-left-margin-0 {margin-left: 0;}
+.hg-left-margin-1 {margin-left: 0.125em;} /*2px*/
+.hg-left-margin-2 {margin-left: 0.25em;} /*4px*/
+.hg-left-margin-3 {margin-left: 0.375em;} /*6px*/
+.hg-left-margin-4 {margin-left: 0.5em;} /*8px*/
+.hg-left-margin-5 {margin-left: 0.75em;} /*12px*/
+.hg-left-margin-6 {margin-left: 1em;} /*16px*/
+.hg-left-margin-7 {margin-left: 1.5em;} /*24px*/
+.hg-left-margin-8 {margin-left: 1.75em;} /*28px*/
+.hg-left-margin-9 {margin-left: 2em;} /*32px*/
+.hg-left-margin-10 {margin-left: 4em;} /*64px*/
+.hg-left-margin-11 {margin-left: 6em;} /*96px*/
+.hg-left-margin-12 {margin-left: 8em;} /*128px*/
+
+.hg-right-margin-auto {margin-right: auto;}
+.hg-right-margin-0 {margin-right: 0;}
+.hg-right-margin-1 {margin-right: 0.125em;} /*2px*/
+.hg-right-margin-2 {margin-right: 0.25em;} /*4px*/
+.hg-right-margin-3 {margin-right: 0.375em;} /*6px*/
+.hg-right-margin-4 {margin-right: 0.5em;} /*8px*/
+.hg-right-margin-5 {margin-right: 0.75em;} /*12px*/
+.hg-right-margin-6 {margin-right: 1em;} /*16px*/
+.hg-right-margin-7 {margin-right: 1.5em;} /*24px*/
+.hg-right-margin-8 {margin-right: 1.75em;} /*28px*/
+.hg-right-margin-9 {margin-right: 2em;} /*32px*/
+.hg-right-margin-10 {margin-right: 4em;} /*64px*/
+.hg-right-margin-11 {margin-right: 6em;} /*96px*/
+.hg-right-margin-12 {margin-right: 8em;} /*128px*/
+
+.hg-bottom-margin-auto {margin-bottom: auto;}
+.hg-bottom-margin-0 {margin-bottom: 0;}
+.hg-bottom-margin-1 {margin-bottom: 0.125em;} /*2px*/
+.hg-bottom-margin-2 {margin-bottom: 0.25em;} /*4px*/
+.hg-bottom-margin-3 {margin-bottom: 0.375em;} /*6px*/
+.hg-bottom-margin-4 {margin-bottom: 0.5em;} /*8px*/
+.hg-bottom-margin-5 {margin-bottom: 0.75em;} /*12px*/
+.hg-bottom-margin-6 {margin-bottom: 1em;} /*16px*/
+.hg-bottom-margin-7 {margin-bottom: 1.5em;} /*24px*/
+.hg-bottom-margin-8 {margin-bottom: 1.75em;} /*28px*/
+.hg-bottom-margin-9 {margin-bottom: 2em;} /*32px*/
+.hg-bottom-margin-10 {margin-bottom: 4em;} /*64px*/
+.hg-bottom-margin-11 {margin-bottom: 6em;} /*96px*/
+.hg-bottom-margin-12 {margin-bottom: 8em;} /*128px*/
+
+}
+
+
+/* Tablets Size | Tamaño Tabletas */
+
+@media screen and (max-width: 992px) {
+
+.tab-top-margin-auto {margin-top: auto;}
+.tab-top-margin-0 {margin-top: 0;}
+.tab-top-margin-1 {margin-top: 0.125em;} /*2px*/
+.tab-top-margin-2 {margin-top: 0.25em;} /*4px*/
+.tab-top-margin-3 {margin-top: 0.375em;} /*6px*/
+.tab-top-margin-4 {margin-top: 0.5em;} /*8px*/
+.tab-top-margin-5 {margin-top: 0.75em;} /*12px*/
+.tab-top-margin-6 {margin-top: 1em;} /*16px*/
+.tab-top-margin-7 {margin-top: 1.5em;} /*24px*/
+.tab-top-margin-8 {margin-top: 1.75em;} /*28px*/
+.tab-top-margin-9 {margin-top: 2em;} /*32px*/
+.tab-top-margin-10 {margin-top: 4em;} /*64px*/
+.tab-top-margin-11 {margin-top: 6em;} /*96px*/
+.tab-top-margin-12 {margin-top: 8em;} /*128px*/
+
+.tab-left-margin-auto {margin-left: auto;}
+.tab-left-margin-0 {margin-left: 0;}
+.tab-left-margin-1 {margin-left: 0.125em;} /*2px*/
+.tab-left-margin-2 {margin-left: 0.25em;} /*4px*/
+.tab-left-margin-3 {margin-left: 0.375em;} /*6px*/
+.tab-left-margin-4 {margin-left: 0.5em;} /*8px*/
+.tab-left-margin-5 {margin-left: 0.75em;} /*12px*/
+.tab-left-margin-6 {margin-left: 1em;} /*16px*/
+.tab-left-margin-7 {margin-left: 1.5em;} /*24px*/
+.tab-left-margin-8 {margin-left: 1.75em;} /*28px*/
+.tab-left-margin-9 {margin-left: 2em;} /*32px*/
+.tab-left-margin-10 {margin-left: 4em;} /*64px*/
+.tab-left-margin-11 {margin-left: 6em;} /*96px*/
+.tab-left-margin-12 {margin-left: 8em;} /*128px*/
+
+.tab-right-margin-auto {margin-right: auto;}
+.tab-right-margin-0 {margin-right: 0;}
+.tab-right-margin-1 {margin-right: 0.125em;} /*2px*/
+.tab-right-margin-2 {margin-right: 0.25em;} /*4px*/
+.tab-right-margin-3 {margin-right: 0.375em;} /*6px*/
+.tab-right-margin-4 {margin-right: 0.5em;} /*8px*/
+.tab-right-margin-5 {margin-right: 0.75em;} /*12px*/
+.tab-right-margin-6 {margin-right: 1em;} /*16px*/
+.tab-right-margin-7 {margin-right: 1.5em;} /*24px*/
+.tab-right-margin-8 {margin-right: 1.75em;} /*28px*/
+.tab-right-margin-9 {margin-right: 2em;} /*32px*/
+.tab-right-margin-10 {margin-right: 4em;} /*64px*/
+.tab-right-margin-11 {margin-right: 6em;} /*96px*/
+.tab-right-margin-12 {margin-right: 8em;} /*128px*/
+
+.tab-bottom-margin-auto {margin-bottom: auto;}
+.tab-bottom-margin-0 {margin-bottom: 0;}
+.tab-bottom-margin-1 {margin-bottom: 0.125em;} /*2px*/
+.tab-bottom-margin-2 {margin-bottom: 0.25em;} /*4px*/
+.tab-bottom-margin-3 {margin-bottom: 0.375em;} /*6px*/
+.tab-bottom-margin-4 {margin-bottom: 0.5em;} /*8px*/
+.tab-bottom-margin-5 {margin-bottom: 0.75em;} /*12px*/
+.tab-bottom-margin-6 {margin-bottom: 1em;} /*16px*/
+.tab-bottom-margin-7 {margin-bottom: 1.5em;} /*24px*/
+.tab-bottom-margin-8 {margin-bottom: 1.75em;} /*28px*/
+.tab-bottom-margin-9 {margin-bottom: 2em;} /*32px*/
+.tab-bottom-margin-10 {margin-bottom: 4em;} /*64px*/
+.tab-bottom-margin-11 {margin-bottom: 6em;} /*96px*/
+.tab-bottom-margin-12 {margin-bottom: 8em;} /*128px*/
+
+}
+
+/* SmartPhone Size | Tamaño Teléfono Inteligente */
+
+@media screen and (max-width: 576px) {
+
+.smt-top-margin-auto {margin-top: auto;}
+.smt-top-margin-0 {margin-top: 0;}
+.smt-top-margin-1 {margin-top: 0.125em;} /*2px*/
+.smt-top-margin-2 {margin-top: 0.25em;} /*4px*/
+.smt-top-margin-3 {margin-top: 0.375em;} /*6px*/
+.smt-top-margin-4 {margin-top: 0.5em;} /*8px*/
+.smt-top-margin-5 {margin-top: 0.75em;} /*12px*/
+.smt-top-margin-6 {margin-top: 1em;} /*16px*/
+.smt-top-margin-7 {margin-top: 1.5em;} /*24px*/
+.smt-top-margin-8 {margin-top: 1.75em;} /*28px*/
+.smt-top-margin-9 {margin-top: 2em;} /*32px*/
+.smt-top-margin-10 {margin-top: 4em;} /*64px*/
+.smt-top-margin-11 {margin-top: 6em;} /*96px*/
+.smt-top-margin-12 {margin-top: 8em;} /*128px*/
+
+.smt-left-margin-auto {margin-left: auto;}
+.smt-left-margin-0 {margin-left: 0;}
+.smt-left-margin-1 {margin-left: 0.125em;} /*2px*/
+.smt-left-margin-2 {margin-left: 0.25em;} /*4px*/
+.smt-left-margin-3 {margin-left: 0.375em;} /*6px*/
+.smt-left-margin-4 {margin-left: 0.5em;} /*8px*/
+.smt-left-margin-5 {margin-left: 0.75em;} /*12px*/
+.smt-left-margin-6 {margin-left: 1em;} /*16px*/
+.smt-left-margin-7 {margin-left: 1.5em;} /*24px*/
+.smt-left-margin-8 {margin-left: 1.75em;} /*28px*/
+.smt-left-margin-9 {margin-left: 2em;} /*32px*/
+.smt-left-margin-10 {margin-left: 4em;} /*64px*/
+.smt-left-margin-11 {margin-left: 4.5em;} /*96px*/
+.smt-left-margin-12 {margin-left: 6em;} /*128px*/
+
+.smt-right-margin-auto {margin-right: auto;}
+.smt-right-margin-0 {margin-right: 0;}
+.smt-right-margin-1 {margin-right: 0.125em;} /*2px*/
+.smt-right-margin-2 {margin-right: 0.25em;} /*4px*/
+.smt-right-margin-3 {margin-right: 0.375em;} /*6px*/
+.smt-right-margin-4 {margin-right: 0.5em;} /*8px*/
+.smt-right-margin-5 {margin-right: 0.75em;} /*12px*/
+.smt-right-margin-6 {margin-right: 1em;} /*16px*/
+.smt-right-margin-7 {margin-right: 1.5em;} /*24px*/
+.smt-right-margin-8 {margin-right: 1.75em;} /*28px*/
+.smt-right-margin-9 {margin-right: 2em;} /*32px*/
+.smt-right-margin-10 {margin-right: 4em;} /*64px*/
+.smt-right-margin-11 {margin-right: 6em;} /*96px*/
+.smt-right-margin-12 {margin-right: 8em;} /*128px*/
+
+.smt-bottom-margin-auto {margin-bottom: auto;}
+.smt-bottom-margin-0 {margin-bottom: 0;}
+.smt-bottom-margin-1 {margin-bottom: 0.125em;} /*2px*/
+.smt-bottom-margin-2 {margin-bottom: 0.25em;} /*4px*/
+.smt-bottom-margin-3 {margin-bottom: 0.375em;} /*6px*/
+.smt-bottom-margin-4 {margin-bottom: 0.5em;} /*8px*/
+.smt-bottom-margin-5 {margin-bottom: 0.75em;} /*12px*/
+.smt-bottom-margin-6 {margin-bottom: 1em;} /*16px*/
+.smt-bottom-margin-7 {margin-bottom: 1.5em;} /*24px*/
+.smt-bottom-margin-8 {margin-bottom: 1.75em;} /*28px*/
+.smt-bottom-margin-9 {margin-bottom: 2em;} /*32px*/
+.smt-bottom-margin-10 {margin-bottom: 4em;} /*64px*/
+.smt-bottom-margin-11 {margin-bottom: 6em;} /*96px*/
+.smt-bottom-margin-12 {margin-bottom: 8em;} /*128px*/
+}
 
    /*|PADDING SIMPLIFIERS| */
 
