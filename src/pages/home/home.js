@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import Header from '../../page-components/header'
 import Footer from '../../components/footer';
 import SyntaxHighlighter from 'react-syntax-highlighter';

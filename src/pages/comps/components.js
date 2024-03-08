@@ -1,7 +1,6 @@
 import DocHeader from "../../page-components/docheader";
 import Slider from "../../components/slider";
 import React, { useState } from 'react';
-import Accordion from "../../components/accordion";
 import Footer from "../../components/footer";
 import SearchBar from "../../components/searchbar";
 import Jumbotron from "../../components/jumbotron";

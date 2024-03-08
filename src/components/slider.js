@@ -9,15 +9,12 @@ const Slider = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
 
   return (
     <>
     <div className='slider-container'> 
     <div className="">
-      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="slider-image"/>
+      <img src={images[currentIndex]} alt={`${currentIndex + 1}`} className="slider-image"/>
     </div>
 
     <div class="">

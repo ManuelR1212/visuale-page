@@ -1,5 +1,5 @@
 import './styles/framework.css';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/home/home'
 import Container from './pages/docs/layout/container';
 import Grids from './pages/docs/layout/grids';
