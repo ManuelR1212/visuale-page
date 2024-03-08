@@ -10,15 +10,16 @@ import Components from './pages/comps/components';
 function App() {
   return (
     <>
-    <BrowserRouter basename='/visuale-page'>
-       <Routes>
-        <Route index element={<Home/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/container" element={<Container/>} />
-        <Route path="/grids" element={<Grids/>} />
-        <Route path="/components" element={<Components/>} />
-       </Routes>
-    </BrowserRouter>
+<BrowserRouter basename='/visuale-page'>
+  <Routes>
+    <Route index element={<Home />} />
+    <Route path="home" element={<Home />} />
+    <Route path="container" element={<Container />} />
+    <Route path="grids" element={<Grids />} />
+    <Route path="components" element={<Components />} />
+  </Routes>
+</BrowserRouter>
+
 
     </>
   );
