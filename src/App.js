@@ -1,5 +1,5 @@
 import './styles/framework.css';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home'
 import Container from './pages/docs/layout/container';
 import Grids from './pages/docs/layout/grids';
@@ -14,19 +14,20 @@ import Width from './pages/docs/layout/width';
 function App() {
   return (
     <>
-    <BrowserRouter basename='/visuale-page'>
-       <Routes>
-        <Route index element={<Home/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/container" element={<Container/>} />
-        <Route path="/grids" element={<Grids/>} />
-        <Route path="/card" element={<Card/>} />
-        <Route path="/components" element={<Components/>} />
-        <Route path='/col-ro' element={<ColRo/>}/>
-        <Route path='/height' element={<Height/>}/>
-        <Route path='/width' element={<Width/>}/>
-       </Routes>
-    </BrowserRouter>
+
+      <BrowserRouter basename='/visuale-page'>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/container" element={<Container />} />
+          <Route path="/grids" element={<Grids />} />
+          <Route path="/card" element={<Card />} />
+          <Route path="/components" element={<Components />} />
+          <Route path='/col-ro' element={<ColRo />} />
+          <Route path='/height' element={<Height />} />
+          <Route path='/width' element={<Width />} />
+        </Routes>
+      </BrowserRouter>
 
     </>
   );
