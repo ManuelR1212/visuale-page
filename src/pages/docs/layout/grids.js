@@ -41,8 +41,8 @@ export default function Grids() {
 
                 <div className='container-2 smt-container-1 card-1 b-white50 tab-container-1'>
 
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">En el siguiente ejemplo, se muestra como una sencilla manera de utilizar el grid. Ya que,
-                únicamente es un tag para heredar propiedades a elementos, el mismo no tiene ningún resultado visual, el resultado será proporcionado al momento de combinarlo con otras etiquetas.</p>
+                    <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">En el siguiente ejemplo, se muestra como una sencilla manera de utilizar el grid. Ya que,
+                        únicamente es un tag para heredar propiedades a elementos, el mismo no tiene ningún resultado visual, el resultado será proporcionado al momento de combinarlo con otras etiquetas.</p>
 
                     <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
                         <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>

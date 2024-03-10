@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
 
                 <section class="container-4 smt-container-2">
-                    <h2 class="display-3 smt-display-6 tab-display-4 smt-container-1 top-padding-5 bottom-margin-3">Inicio rápido 2</h2>
+                    <h2 class="display-3 smt-display-6 tab-display-4 smt-container-1 top-padding-5 bottom-margin-3">Inicio rápido</h2>
                     <p class="smt-container-1 smt-txt-size-2sm tab-txt-size-5sm top-margin-0 bottom-padding-5">Antes de comenzar con la creación de tus proyectos web, es necesario que conozcas todos los pasos
                         necesarios para la instalación de tu framework de estilos preferido.
                     </p>

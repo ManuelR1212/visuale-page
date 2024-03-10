@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-content">
         <p className='tab-txt-size-2 smt-txt-size-1sm'>© 2024 Visual E. Todos los derechos reservados</p>
         <ul className="footer-links">
-          <li><a href="https://github.com/ManuelR1212/Visual-E-Framework" className='t-white50 tab-txt-size-2 smt-txt-size-1sm'>Github</a></li>
+          <li><a href="https://github.com/visual-e-ve/Visual-E-Framework" className='t-white50 tab-txt-size-2 smt-txt-size-1sm'>Github</a></li>
           <li><a href="https://www.npmjs.com/package/visual-e" className='t-white50 tab-txt-size-2 smt-txt-size-1sm'>NPM</a></li>
           <li><a href="/contact" className='t-white50 tab-txt-size-2 smt-txt-size-1sm'>Gmail</a></li>
         </ul>

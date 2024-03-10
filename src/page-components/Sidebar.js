@@ -9,37 +9,36 @@ const Sidebar = ({className}) => {
           <h1 class="txt-size-5 t-white50 font-normal bottom-margin-7 left-margin-7">Elementos</h1>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3">Escenciales</h2>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Variables CSS</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Display Flex</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Diseño General</p>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Variables CSS</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Display Flex</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Diseño General</li>
           
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Capas</h2>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Height</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Width</p>
-          <Link to='/container'><p class="txt-size-3 t-white50 font-light hover left-margin-3">Container</p></Link>
-          <Link to='/card'><p class="txt-size-3 t-white50 font-light hover left-margin-3">Card</p></Link>
-          <Link to='/grids'><p class="txt-size-3 t-white50 font-light hover left-margin-3">Grid</p></Link>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Column</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Span</p>
+          <Link to='/height'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Height</li></Link>
+          <Link to='/width'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Width</li></Link>
+          <Link to='/container'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Container</li></Link>
+          <Link to='/card'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Card</li></Link>
+          <Link to='/grids'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Grid</li></Link>
+          <Link to='/col-ro'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Column and rows</li></Link>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Contenido</h2>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Tipography</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Tables</p>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Tipography</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Tables</li>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Componentes</h2>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Navbar</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Sidebar</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Button</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Form</p>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Navbar</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Sidebar</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Button</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Form</li>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Simplifiers</h2>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Border</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Radius</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Shadow</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Color</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Background</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Margin</p>
-          <p class="txt-size-3 t-white50 font-light hover left-margin-3">Padding</p>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Border</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Radius</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Shadow</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Color</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Background</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Margin</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Padding</li>
 
         </div>}
     </div>
