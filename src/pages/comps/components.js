@@ -1,5 +1,5 @@
 import DocHeader from "../../page-components/docheader";
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from "../../components/footer";
 import Accordion from "../../components/accordion";
 import SyntaxHighlighter from 'react-syntax-highlighter';
