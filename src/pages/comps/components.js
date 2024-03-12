@@ -7,37 +7,6 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function Components() {
 
-  const imageUrls = [
-    'https://www.petful.com/wp-content/uploads/2015/05/Turkish-Van-cat-1-750x507.jpg',
-    'https://d3544la1u8djza.cloudfront.net/APHI/Blog/2021/08-26/white+Turkish+van+cat+with+one+green+eye+and+one+blue+eye+and+blue+collar+being+held+by+a+human-min.jpg',
-    'https://i0.wp.com/ittykitty.com/wp-content/uploads/2018/04/turkish-van-cat-1.jpg?resize=696%2C695',
-
-  ];
-
-  const product = {
-    id: 123,
-    name: 'Zapatillas deportivas',
-    category: 'Calzado',
-    brand: 'MiMarca',
-  };
-
-  const breadcrumbsItems = [
-    { label: 'Inicio', link: '/' },
-    { label: 'Productos', link: '/productos' },
-    { label: product.category, link: `/productos/${product.category}` },
-    { label: product.name, link: `/productos/${product.category}/${product.id}` },
-  ];
-
-  const [showModal, setShowModal] = useState(false);
-
-  const openModal = () => {
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
-
   const codeString1 = `const Accordion = ({ title, content, className, classNamebtn}) => {
     const [isOpen, setIsOpen] = useState(false); //Open and close function | Función para abrir y cerrar
   
