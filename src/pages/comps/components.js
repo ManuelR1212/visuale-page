@@ -1,11 +1,9 @@
 import DocHeader from "../../page-components/docheader";
-import Slider from "../../components/slider";
 import React, { useState } from 'react';
 import Footer from "../../components/footer";
-import SearchBar from "../../components/searchbar";
-import Jumbotron from "../../components/jumbotron";
-import Breadcrumbs from "../../components/breadcrumb";
-import Modal from "../../components/modals";
+import Accordion from "../../components/accordion";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function Components() {
 
@@ -40,6 +38,37 @@ export default function Components() {
     setShowModal(false);
   };
 
+  const codeString1 = `const Accordion = ({ title, content, className, classNamebtn}) => {
+    const [isOpen, setIsOpen] = useState(false); //Open and close function | Función para abrir y cerrar
+  
+    const toggleAccordion = () => {
+      setIsOpen(!isOpen);
+    };
+  
+    return ( // Return title and content | Retornar título y contenido
+      <div className={className}>
+        <button className={"accordion__button $ {isOpen ? 'open' : ''} $ {classNamebtn}"} onClick={toggleAccordion} >
+          {title}
+        </button>
+        {isOpen && <div className="accordion__content">{content}</div>}
+      </div>
+    );
+  };
+  
+  Accordion.propTypes = {
+    content: PropTypes.string.isRequired,
+    tittle: PropTypes.string.isRequired,
+    className: PropTypes.string,
+  };
+  
+  export default Accordion;`
+
+  const codeString2 = `<div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+  <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+    {codeString1}
+  </SyntaxHighlighter>
+</div>`
+
   return (
     <>
       <DocHeader />
@@ -51,124 +80,50 @@ export default function Components() {
 
 
       <div class="container-3 smt-container-1 tab-container-3">
-        <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Slider</h1>
-        <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Los containers en son elementos que envuelven y contienen otros elementos.
-          Pueden ser utilizados para aplicar estilos; como márgenes, rellenos, anchos y alturas a un grupo de elementos.</p>
+        <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Accordion</h1>
+        <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">El acordeón es un elemento de interfaz de usuario utilizado para presentar una lista de elementos de manera compacta. Consiste en una lista vertical de encabezados que se expanden y contraen cuando se hace clic en ellos.
+          Este tipo de componente es útil porque permite a los usuarios escanear rápidamente una lista y expandir solo los elementos relevantes.</p>
       </div>
 
       <section class="container-3 smt-container-1 tab-container-2">
+        <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Ejemplo de uso</h1>
         <div class="container-2 smt-container-1 card-1 b-white50 tab-container-1">
 
+
+          <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">La composición de un componente Accordion es sencilla. El mismo, cuenta con una función para abrir y cerrar,
+            que se complementa con clases CSS para tener una funcionalidad efectiva. Por otro lado, retorna dos parámetros muy importantes <b>tittle</b> y <b>content</b> los cuales almacenarán el título del acordeón y su contenido respectivamente.</p>
+
+
+          <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+            <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+              {codeString1}
+            </SyntaxHighlighter>
+          </div>
+
+          <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Para utilizar el componente dentro de tu proyecto React, es importante que importes el componente. Utilizando <b>import Accordion from "ruta del componente"</b> el código tendrá acceso al componente y sus funciones.
+            Puedes llamar a sus propiedades de la siguiente manera en tu archivo jsx:</p>
+
+          <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+            <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+              {codeString2}
+            </SyntaxHighlighter>
+          </div>
+
+          <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Puedes usar tantos acordeones como quieras en tu código, también puedes usar varios acordeones dentro de si mismos, de ahí su nombre.
+            El estilo de cada acordeón es individual, por lo que no pierdas tiempo y deja volar tu imaginación. Recuerda, debes usar el parameto <b>className</b> para modificar las medidas del acordeón, <b>classNamebtn</b> para los estilos del botón y por
+            último, <b>classNamectn</b> para el diseño del interior.</p>
+
           <div>
-            <Slider images={imageUrls} />
+            <Accordion className="accordion width-4 container-3" classNamebtn="b-blue500 round-3 t-white50" title="¡Da click aquí para abrir y cerrar el acordeón!" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" classNamectn="b-blue200 center-txt" />
           </div>
 
-          <div>
-            <SearchBar />
-          </div>
-
-          <div>
-            <Jumbotron className={"jumbotron b-red500"} title={"Hola Mundo!"} description={"Bienvenidos a mi primer Jumbotron"} />
-          </div>
-
-          <div>
-            <Breadcrumbs className={"breadcrumbs"} items={breadcrumbsItems} />
-            <h1>{product.name}</h1>
-            <p>Marca: {product.brand}</p>
-          </div>
-
-
-          <div>
-            <button onClick={openModal}>Abrir Modal</button>
-            <Modal isOpen={showModal} onClose={closeModal}>
-              <h2>Holaaaaaaa</h2>
-              <p>Esto es un mensaje</p>
-            </Modal>
-          </div>
-
-
-        </div>
-
-      </section>
-
-      <section class="container-3 smt-container-1 tab-container-1">
-
-        <div>
-          <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Ejemplos de uso</h1>
-          <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm">Un container puede ser utilizado en cualquier parte de tu código HTML, siempre y
-            cuando quieras mantener un orden de los elementos específico, basado en porcentajes ocupados en la pantalla.</p>
-        </div>
-
-        <div class="card-1 container-2 smt-container-1">
-          <div class="container-3 smt-container-1 tab-container-1 grid-u col-2 tab-col-2 smt-col-1 items-center">
-
-            <div>
-              <h4 class="center-txt">Sin uso de "container"</h4>
-              <div class="b-blue400">
-                <p class="left-txt smt-txt-size-3sm tab-txt-size-5sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, necessitatibus.</p>
-              </div>
-            </div>
-
-            <div>
-              <h4 class="center-txt">Uso de "container-1" 100%</h4>
-              <div class="b-blue500 container-1">
-                <p class="left-txt smt-txt-size-3sm tab-txt-size-5sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, necessitatibus.</p>
-              </div>
-            </div>
-
-            <div>
-              <h4 class="center-txt">Uso de "container-2" 90%</h4>
-              <div class="b-blue600 container-2">
-                <p class="left-txt smt-txt-size-3sm tab-txt-size-5sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, necessitatibus.</p>
-              </div>
-            </div>
-
-            <div>
-              <h4 class="center-txt">Uso de "container-3" 80%</h4>
-              <div class="b-blue700 container-3">
-                <p class="left-txt smt-txt-size-3sm tab-txt-size-5sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <p class="container-2 top-margin-0 bottom-padding-5 smt-container-2 smt-txt-size-2sm tab-txt-size-5sm">El número de la etiqueta de cada container alterará su porcentaje ocupado en pantalla. Mientras el
-          número de la etiqueta sea mayor, el porcentaje irá disminuyendo en un 10%. Los container usan propiedades de "padding" y "margin" para ordenar sus elementos, como se observó en el ejemplo:
-        </p>
-
-        <div class="width-5 left-padding-2 container-4 smt-container-4 bottom-margin-8">
-          <pre>
-          </pre>
-
-        </div>
-
-        <p class="container-2 top-margin-0 bottom-padding-5 smt-container-2 smt-txt-size-2sm tab-txt-size-5sm">Puedes usar un container dentro de otro. Juega con sus propiedades para crear estilos totalmente originales:
-        </p>
-
-        <div>
-          <div></div>
-          <iframe width="820.33"
-            height="497"
-            title="aa"
-            src="https://snappify.com/embed/b81ea337-847d-4cef-aa02-7566ce56c156/3cbfea16-5d67-4b9e-85d7-00031d5de8c2?responsive=1&autoplay=1&b=0"
-            allow="clipboard-write"
-            allowfullscreen=""
-            loading="lazy"
-            frameborder="0"></iframe>
-        </div>
-
-        <h1 class="display-1 center-txt margin-none smt-display-5">=</h1>
-
-        <div class="card-1 container-2 b-gray400 smt-container-2 round-6">
-          <div class="card-1 container-3 b-red500 smt-container-3 round-full">
-            <h2 class="center-txt t-white50 smt-txt-size-3sm">Zyzz ✉️</h2>
-            <p class="container-2 top-margin-0 bottom-padding-5 txt-size-6 center-txt smt-txt-size-2sm smt-container-1"> ¡Hola bro! ¿Quieres ir al gym conmigo hoy? </p>
-          </div>
         </div>
 
 
       </section>
+
+
 
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>

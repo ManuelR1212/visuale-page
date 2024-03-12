@@ -14,18 +14,19 @@ const Sidebar = ({className}) => {
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Diseño General</li>
           
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Capas</h2>
+          <Link to='/card'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Card</li></Link>
+          <Link to='/col-ro'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Column and rows</li></Link>
+          <Link to='/container'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Container</li></Link>
+          <Link to='/grids'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Grid</li></Link>
           <Link to='/height'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Height</li></Link>
           <Link to='/width'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Width</li></Link>
-          <Link to='/container'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Container</li></Link>
-          <Link to='/card'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Card</li></Link>
-          <Link to='/grids'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Grid</li></Link>
-          <Link to='/col-ro'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Column and rows</li></Link>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Contenido</h2>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Tipography</li>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Tables</li>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3 top-margin-7">Componentes</h2>
+          <Link to='/components'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Accordion</li></Link>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Navbar</li>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Sidebar</li>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Button</li>
