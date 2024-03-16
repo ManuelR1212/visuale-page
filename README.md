@@ -5,7 +5,7 @@
 
 # Visual E
 
-Este es el repositorio oficial de Visual E, donde encontrarás la información necesaria para su implementación en tus proyectos, como; plugins, dependencias y tutoriales. Para una mayor información, visita la página de [documentación](https://manuelr1212.github.io/visuale-page/).
+Este es el repositorio oficial de Visual E, donde encontrarás la información necesaria para su implementación en tus proyectos, como; plugins, dependencias y tutoriales. Para una mayor información, visita la página de [documentación](https://visual-e-ve.github.io/visuale-page/). You can also read an [english version](https://github.com/visual-e-ve/visual-e-framework/blob/master/README-en.md).
 
 ## Introducción
 
@@ -38,17 +38,17 @@ return (
 />)
 }
 ```
-Este ejemplo te muestra una pequeña parte de todas las funciones que ofrece Visual E para tus proyectos, para aprender más sobre ellas visita la [documentación](https://manuelr1212.github.io/visuale-page/).
+Este ejemplo te muestra una pequeña parte de todas las funciones que ofrece Visual E para tus proyectos, para aprender más sobre ellas visita la [documentación](https://visual-e-ve.github.io/visuale-page/).
 
 ¿Te sientes preparado? Sigue los pasos en la sección de "inicio rápido" para comenzar con tus proyectos.
 
 ## Inicio Rápido
 
-Visual E ofrece a aquellos usuarios que necesiten de un diseño rápido pero agradable y consistente, un método de implementar el framework en sus proyectos sin necesidad de instalaciones previas; todo esto através del uso del [Link CDN](https://cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.css) de Visual E.
+Visual E ofrece a aquellos usuarios que necesiten de un diseño rápido pero agradable y consistente, un método de implementar el framework en sus proyectos sin necesidad de instalaciones previas; todo esto através del uso del [Link CDN](https://cdn.jsdelivr.net/npm/visual-e@1.0.4/styles/framework.min.css) de Visual E.
 
-`https://cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.css`
+`https://cdn.jsdelivr.net/npm/visual-e@1.0.4/styles/framework.min.css`
 
-Pega el [Link CDN](https://cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.css) dentro del "head" de tu código HTML. Simplemente con esto, podrás utilizar todos los estilos y etiquetas de Visual E dentro de tu proyecto, para una mayor información, visita la página de [documentación](https://manuelr1212.github.io/visuale-page/).
+Pega el [Link CDN](https://cdn.jsdelivr.net/npm/visual-e@1.0.4/styles/framework.min.css) dentro del "head" de tu código HTML. Simplemente con esto, podrás utilizar todos los estilos y etiquetas de Visual E dentro de tu proyecto, para una mayor información, visita la página de [documentación](https://visual-e-ve.github.io/visuale-page/).
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +57,7 @@ Pega el [Link CDN](https://cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.
     <meta charset="utf-8"> 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <title>Visual E Project</title>
-	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+	 <link href="https://cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.css" rel="stylesheet"> 
   </head>
 </html>
 ```
@@ -72,8 +72,8 @@ Esto hará que npm instale todos los paquetes necesarios para que puedas utiliza
 
 ## Documentación
 
-Podrás encontrar toda la documentación disponible de Visual E, en nuestra [página web oficial](https://manuelr1212.github.io/visuale-page/). La documentación de Visual E sigue en desarrollo, te invitamos a empezar tus proyectos con nosotros!
+Podrás encontrar toda la documentación disponible de Visual E, en nuestra [página web oficial](https://visual-e-ve.github.io/visuale-page/). La documentación de Visual E sigue en desarrollo, te invitamos a empezar tus proyectos con nosotros!
 
 ## Licencia
 
-Visual E cuenta con una licencia MIT. Puedes averiguar más y leer sobre la misma aquí.
+Visual E cuenta con una licencia MIT. Puedes averiguar más y leer sobre la misma [aquí](https://github.com/visual-e-ve/visual-e-framework/blob/master/LICENCE.md).
