@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Badge = ({ content, className }) => {
+const BadgeComp = ({ content, className }) => {
   return (
     <div>
       <span className={className}>{content}</span>
@@ -9,8 +9,8 @@ const Badge = ({ content, className }) => {
   );
 };
 
-Badge.propTypes = {
+BadgeComp.propTypes = {
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
-export default Badge;
+export default BadgeComp;

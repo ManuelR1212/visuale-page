@@ -1203,6 +1203,10 @@ Searchbar | Barra de búsqueda
     border: none;
     cursor: pointer;
   }
+
+  .btn-click:active {
+    background-color: #474b47;
+  }
   
 
 /* ||||||||||||||||||||||||
@@ -1252,7 +1256,7 @@ Searchbar | Barra de búsqueda
   }
   
   .accordion__button.open {
-    background-color: #e0e0e0;
+    background-color: #334058;
   }
   
   .accordion__content {

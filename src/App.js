@@ -8,6 +8,14 @@ import Card from './pages/docs/layout/card';
 import ColRo from './pages/docs/layout/col-ro';
 import Height from './pages/docs/layout/height';
 import Width from './pages/docs/layout/width';
+import Badge from './pages/comps/badge-page';
+import Button from './pages/comps/button-page';
+import FooterPage from './pages/comps/footer-page';
+import SidebarPage from './pages/comps/sidebar-page';
+import NavbarPage from './pages/comps/navbar-page';
+import SearchbarPage from './pages/comps/searchbar-page';
+import JumbotronPage from './pages/comps/jumbotron-page';
+import BreadcrumbPage from './pages/comps/breadcrumb-page';
 
 
 
@@ -26,6 +34,14 @@ function App() {
           <Route path='/col-ro' element={<ColRo />} />
           <Route path='/height' element={<Height />} />
           <Route path='/width' element={<Width />} />
+          <Route path='/badge' element={<Badge />} />
+          <Route path='/button' element={<Button />} />
+          <Route path='/footer' element={<FooterPage />} />
+          <Route path='/sidebar' element={<SidebarPage />} />
+          <Route path='/navbar' element={<NavbarPage />} />
+          <Route path='/searchbar' element={<SearchbarPage />} />
+          <Route path='/jumbotron' element={<JumbotronPage />} />
+          <Route path='/breadcrumb' element={<BreadcrumbPage />} />
         </Routes>
       </BrowserRouter>
 
