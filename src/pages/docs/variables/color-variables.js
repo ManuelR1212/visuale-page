@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import DocHeader from '../../../page-components/docheader';
 import Footer from '../../../components/footer';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function ColorVariables() {
     useEffect(() => {

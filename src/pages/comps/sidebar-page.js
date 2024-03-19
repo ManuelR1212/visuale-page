@@ -7,7 +7,6 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function SidebarPage() {
 
-    const enlace = 'https://www.ejemplo.com';
 
     const codeString1 = `import '../styles/framework.css';
 
