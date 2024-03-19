@@ -138,7 +138,7 @@ import '../styles/framework.css';
 
                     <div className="grid-u col-1 container-4">
                         <button onClick={openModal} className="round-full  b-gray200 t-white50 hover">Abrir Modal</button>
-                        <Modal isOpen={showModal} onClose={closeModal} tittle={'Modal Ejemplo Visual E'} content={"Contenido"} className={"b-gray200"}>
+                        <Modal isOpen={showModal} onClose={closeModal} tittle={'Modal Ejemplo Visual E'} content={"Contenido"} className={"b-gray50"}>
                         </Modal>
                     </div>
 

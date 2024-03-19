@@ -3,6 +3,7 @@ import DocHeader from '../../../page-components/docheader';
 import Footer from '../../../components/footer';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import CopyButton from "../../../page-components/CopyButton";
 
 export default function Container() {
     useEffect(() => {
@@ -60,6 +61,7 @@ export default function Container() {
                         completamente responsive hasta el punto de quiebre:</p>
 
                     <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString1} />
                         <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                             {codeString1}
                         </SyntaxHighlighter>
@@ -166,6 +168,7 @@ export default function Container() {
                 </p>
 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                <CopyButton text={codeString2} />
                     <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                         {codeString2}
                     </SyntaxHighlighter>
@@ -235,6 +238,7 @@ export default function Container() {
                 <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-7 tab-txt-size-5sm justify-txt">Mostrado en un ejemplo, los containers adaptados a mediaquerys se verán de la siguiente manera:</p>
                 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                <CopyButton text={codeString3} />
                     <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                         {codeString3}
                     </SyntaxHighlighter>

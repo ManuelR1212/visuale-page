@@ -3,6 +3,7 @@ import DocHeader from '../../../page-components/docheader';
 import Footer from '../../../components/footer';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import CopyButton from "../../../page-components/CopyButton";
 
 export default function ColRo() {
     useEffect(() => {
@@ -190,6 +191,7 @@ export default function ColRo() {
             <div class="container-3 smt-container-1 card-1 tab-container-1">
 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString1} />
                     <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                         {codeString1}
                     </SyntaxHighlighter>
@@ -351,6 +353,7 @@ export default function ColRo() {
             <div class="container-3 smt-container-1 card-1 tab-container-1">
 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                <CopyButton text={codeString2} />
                     <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                         {codeString2}
                     </SyntaxHighlighter>
@@ -360,7 +363,7 @@ export default function ColRo() {
                     seguida de un número del uno al doce, asignará al elemento de la fila con la propiedad, un espacio dentro de las columnas. Por ejemplo, si se tienen cuatro columnas, quiero que el elemento "Columna 1"
                     ocupe un <b>span-2</b>, es decir, dos columnas de las cuatro disponibles.</p>
 
-                <section class="grid-u col-4 tab-col-2 smt-col-1 center-txt display-6 tab-txt-size-5 smt-txt-size-2 container-3">
+                <section class="grid-u col-4 tab-col-2 smt-col-1 center-txt display-6 tab-txt-size-5 smt-txt-size-2 container-3 smt-container-1">
                     <div className='card-1 b-blue500 span-2 tab-span-2 smt-span-2'>Columna 1</div>
                     <div className='card-1 b-blue500'>Columna 2</div>
                     <div className='card-1 b-blue500'>Columna 3</div>

@@ -71,7 +71,7 @@ const DocHeader = () => {
             <Link to='/home'><p className='t-white50 txt-size-4 smt-txt-size-1sm margin-none'>Inicio</p></Link>
             <Link to="/container"><p className='t-white50 txt-size-4 smt-txt-size-1sm margin-none'>Documentación</p></Link>
             <Link to="/components"><p className='t-white50 txt-size-4 smt-txt-size-1sm margin-none'>Componentes</p></Link>
-            <button onClick={switchTheme} className='top-padding-0 b-none border-none txt-size-8 rounded-hover '>🌓</button>
+            <button onClick={switchTheme} className='top-padding-0 b-none border-none txt-size-8 smt-txt-size-5 rounded-hover '>🌓</button>
           </div>
 
           <div>

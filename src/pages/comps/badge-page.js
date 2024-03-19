@@ -86,7 +86,7 @@ export default function Badge() {
                         </SyntaxHighlighter>
                     </div>
 
-                    <div className="grid-u col-8  sh-col-4 tab-col-5 smt-col-4container-4 tab-container-1 smt-container-1">
+                    <div className="grid-u col-8  sh-col-4 tab-col-5 smt-col-3 container-4 tab-container-1 smt-container-1">
                         <BadgeComp className={"b-red200 round-3 txt-size-6 tab-txt-size-2sm smt-txt-size-1sm left-padding-3 right-padding-3 "} content="Badge" />
                         <BadgeComp className={"b-red300 border-s1 bd-blue500 round-3 txt-size-6 tab-txt-size-2sm smt-txt-size-1sm left-padding-3 right-padding-3 "} content="Badge" />
                         <BadgeComp className={"b-none border-s1 bd-blue500 round-3 txt-size-6 tab-txt-size-2sm smt-txt-size-1sm left-padding-3 right-padding-3 "} content="Badge" />

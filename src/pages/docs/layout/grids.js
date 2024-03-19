@@ -3,6 +3,7 @@ import DocHeader from '../../../page-components/docheader';
 import Footer from '../../../components/footer';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import CopyButton from "../../../page-components/CopyButton";
 
 export default function Grids() {
     useEffect(() => {
@@ -45,6 +46,7 @@ export default function Grids() {
                         únicamente es un tag para heredar propiedades a elementos, el mismo no tiene ningún resultado visual, el resultado será proporcionado al momento de combinarlo con otras etiquetas.</p>
 
                     <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString1} />
                         <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                             {codeString1}
                         </SyntaxHighlighter>

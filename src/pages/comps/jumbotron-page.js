@@ -93,11 +93,11 @@ export default function JumbotronPage() {
                     </div>
 
                     <Jumbotron title="Noticia de última hora!" description="Un simio fue visto a las afueras de un zoologico tocando una serenata."
-                        className="b-red100 border-s1 bd-red200 smt-txt-size-2sm tab-txt-size-5sm" />
+                        className="b-red100 border-s1 bd-red200 smt-txt-size-2sm tab-txt-size-5sm top-padding-4" />
 
 
                     <Jumbotron title="¡Maquillaje" description="Te quita mas de veinte años de encima, ¡vísitanos!"
-                        className="b-blue100 border-s1 bd-blue200 top-margin-8 center-txt smt-txt-size-2sm tab-txt-size-5sm" />
+                        className="b-blue100 border-s1 bd-blue200 top-margin-8 center-txt smt-txt-size-2sm tab-txt-size-5sm top-padding-4" />
                 </div>
 
 

@@ -86,7 +86,7 @@ export default function Components() {
             último, <b>classNamectn</b> para el diseño del interior.</p>
 
           <div>
-            <Accordion className="accordion width-4 container-3" classNamebtn="b-blue500 round-3 t-white50 smt-txt-size-1sm tab-txt-size-5sm" title="¡Da click aquí para abrir y cerrar el acordeón!" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <Accordion className="accordion width-4 container-3 tab-container-2 smt-container-1" classNamebtn="b-blue500 round-3 t-white50 smt-txt-size-1sm tab-txt-size-5sm" title="¡Da click aquí para abrir y cerrar el acordeón!" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             " classNamectn="b-blue200 justify-txt smt-txt-size-1sm tab-txt-size-5sm" />
           </div>
 

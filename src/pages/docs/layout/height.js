@@ -3,6 +3,7 @@ import DocHeader from '../../../page-components/docheader';
 import Footer from '../../../components/footer';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import CopyButton from "../../../page-components/CopyButton";
 
 export default function Height() {
     useEffect(() => {
@@ -113,6 +114,7 @@ export default function Height() {
                 código por defecto tomará el tamaño mayor.</p>
 
             <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+            <CopyButton text={codeString1} />
                 <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                     {codeString1}
                 </SyntaxHighlighter>

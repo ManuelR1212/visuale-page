@@ -144,7 +144,7 @@ const breadcrumbsItems = [
 
 
                     <div className="b-blue200 smt-txt-size-2sm tab-txt-size-5sm">
-                        <Breadcrumbs className={"breadcrumbs b-blue400 "} classNameLi={'t-black50 '} items={breadcrumbsItems} />
+                        <Breadcrumbs className={"breadcrumbs b-blue400"} classNameLi={'t-black50'} items={breadcrumbsItems} />
                         <h1>{product.name}</h1>
                         <p>Marca: {product.brand}</p>
                     </div>

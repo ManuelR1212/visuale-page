@@ -3,6 +3,7 @@ import DocHeader from '../../../page-components/docheader';
 import Footer from '../../../components/footer';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import CopyButton from "../../../page-components/CopyButton";
 
 export default function Card() {
     useEffect(() => {
@@ -45,6 +46,7 @@ export default function Card() {
                     Varias cards pueden ser incluidas dentro de una página, de manera que quede la información ordenada y estilizada.</p>
 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                <CopyButton text={codeString1} />
                     <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                         {codeString1}
                     </SyntaxHighlighter>
@@ -57,6 +59,7 @@ export default function Card() {
                         Inclusive, pueden ser manejadas por un container, tanto dentro como fuera de la misma.</p>
 
                     <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString2} />
                         <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                             {codeString2}
                         </SyntaxHighlighter>

@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import DocHeader from '../../../page-components/docheader';
-import Footer from '../../../components/footer';
+import DocHeader from '../../page-components/docheader';
+import Footer from '../../components/footer';
 
 
-export default function ColorVariables() {
+
+export default function TextColor() {
     useEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js';
@@ -29,9 +30,9 @@ export default function ColorVariables() {
 
 
             <div class="container-3 smt-container-1 tab-container-3">
-                <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Variables de Color</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Visual E te ofrece una amplia cantidad de variables de color, las cuales vienen predefinas y utilizadas por defecto dentro de los colores para las etiquetas. Como pueden ser 
-                ; colores de fondo, textos, bordes, sombreados, etc... Nuestro framework d estilos brinda tonalidades referentes a nuestra paleta de colores oficial para la documentación. Si eres desarrollador y quieres aportar más colores a nuestras variables, no esperes más tiempo!</p>
+                <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Color de Texto</h1>
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">En Visual E, usamos el selector <b>t-</b> acompañado del color que más te guste. En nuestro caso, combinamos el selector de los text con nuestras variables de color css. Por ejemplo; <b>t-red50</b>, esto transforma el color del texto de cualquier palabra o frase… 
+                Juega con los colores y crea las páginas web más atractivas.</p>
 
             </div>
 
@@ -51,21 +52,21 @@ export default function ColorVariables() {
 
                                 <tbody>
                                     <tr >
-                                        <td>--white50</td>
-                                        <td className='b-white50'></td>
+                                        <td>t-white50</td>
+                                        <td className='t-white50'>Visual E Text</td>
 
                                     </tr>
                                     <tr>
-                                        <td>--white100</td>
-                                        <td className='b-white100'></td>
+                                        <td>t-white100</td>
+                                        <td className='t-white100'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--white200</td>
-                                        <td className='b-white100'></td>
+                                        <td>t-white200</td>
+                                        <td className='t-white100'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--white300</td>
-                                        <td className='b-white300'></td>
+                                        <td>t-white300</td>
+                                        <td className='t-white300'>Visual E Text</td>
                                     </tr>
 
 
@@ -93,32 +94,32 @@ export default function ColorVariables() {
 
                                 <tbody>
                                     <tr >
-                                        <td>--gray50</td>
-                                        <td className='b-gray50'></td>
+                                        <td>t-gray50</td>
+                                        <td className='t-gray50'>Visual E Text</td>
 
                                     </tr>
                                     <tr>
-                                        <td>--gray100</td>
-                                        <td className='b-gray100'></td>
+                                        <td>t-gray100</td>
+                                        <td className='t-gray100'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--gray200</td>
-                                        <td className='b-gray200'></td>
+                                        <td>t-gray200</td>
+                                        <td className='t-gray200'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--gray300</td>
-                                        <td className='b-gray300'></td>
+                                        <td>t-gray300</td>
+                                        <td className='t-gray300'>Visual E Text</td>
                                     </tr>
 
                                     <tr >
-                                        <td>--gray400</td>
-                                        <td className='b-gray400'></td>
+                                        <td>t-gray400</td>
+                                        <td className='t-gray400'>Visual E Text</td>
 
                                     </tr>
 
                                     <tr >
-                                        <td>--black50</td>
-                                        <td className='b-black50'></td>
+                                        <td>t-black50</td>
+                                        <td className='t-black50'>Visual E Text</td>
 
                                     </tr>
 
@@ -147,53 +148,53 @@ export default function ColorVariables() {
 
                                 <tbody>
                                     <tr >
-                                        <td>--blue50</td>
-                                        <td className='b-blue50'></td>
+                                        <td>t-blue50</td>
+                                        <td className='t-blue50'>Visual E Text</td>
 
                                     </tr>
                                     <tr>
-                                        <td>--blue100</td>
-                                        <td className='b-blue100'></td>
+                                        <td>t-blue100</td>
+                                        <td className='t-blue100'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--blue200</td>
-                                        <td className='b-blue200'></td>
+                                        <td>t-blue200</td>
+                                        <td className='t-blue200'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--blue300</td>
-                                        <td className='b-blue300'></td>
+                                        <td>t-blue300</td>
+                                        <td className='t-blue300'>Visual E Text</td>
                                     </tr>
 
                                     <tr >
-                                        <td>--blue400</td>
-                                        <td className='b-blue400'></td>
-
-                                    </tr>
-
-                                    <tr >
-                                        <td>--blue500</td>
-                                        <td className='b-blue500'></td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>--blue600</td>
-                                        <td className='b-blue600'></td>
-                                    </tr>
-                                    <tr>
-                                        <td>--blue700</td>
-                                        <td className='b-blue700'></td>
-                                    </tr>
-
-                                    <tr >
-                                        <td>--blue800</td>
-                                        <td className='b-blue800'></td>
+                                        <td>t-blue400</td>
+                                        <td className='t-blue400'>Visual E Text</td>
 
                                     </tr>
 
                                     <tr >
-                                        <td>--blue900</td>
-                                        <td className='b-blue900'></td>
+                                        <td>t-blue500</td>
+                                        <td className='t-blue500'>Visual E Text</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>t-blue600</td>
+                                        <td className='t-blue600'>Visual E Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>t-blue700</td>
+                                        <td className='t-blue700'>Visual E Text</td>
+                                    </tr>
+
+                                    <tr >
+                                        <td>t-blue800</td>
+                                        <td className='t-blue800'>Visual E Text</td>
+
+                                    </tr>
+
+                                    <tr >
+                                        <td>t-blue900</td>
+                                        <td className='t-blue900'>Visual E Text</td>
 
                                     </tr>
 
@@ -222,53 +223,53 @@ export default function ColorVariables() {
 
                                 <tbody>
                                     <tr >
-                                        <td>-red50</td>
-                                        <td className='b-red50'></td>
+                                        <td>t-red50</td>
+                                        <td className='t-red50'>Visual E Text</td>
 
                                     </tr>
                                     <tr>
-                                        <td>--red100</td>
-                                        <td className='b-red100'></td>
+                                        <td>t-red100</td>
+                                        <td className='t-red100'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--red200</td>
-                                        <td className='b-red200'></td>
+                                        <td>t-red200</td>
+                                        <td className='t-red200'>Visual E Text</td>
                                     </tr>
                                     <tr>
-                                        <td>--red300</td>
-                                        <td className='b-red300'></td>
+                                        <td>t-red300</td>
+                                        <td className='t-red300'>Visual E Text</td>
                                     </tr>
 
                                     <tr >
-                                        <td>--red400</td>
-                                        <td className='b-red400'></td>
-
-                                    </tr>
-
-                                    <tr >
-                                        <td>--red500</td>
-                                        <td className='b-red500'></td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>--red600</td>
-                                        <td className='b-red600'></td>
-                                    </tr>
-                                    <tr>
-                                        <td>--red700</td>
-                                        <td className='b-red700'></td>
-                                    </tr>
-
-                                    <tr >
-                                        <td>--red800</td>
-                                        <td className='b-red800'></td>
+                                        <td>t-red400</td>
+                                        <td className='t-red400'>Visual E Text</td>
 
                                     </tr>
 
                                     <tr >
-                                        <td>--red900</td>
-                                        <td className='b-red900'></td>
+                                        <td>t-red500</td>
+                                        <td className='t-red500'>Visual E Text</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>t-red600</td>
+                                        <td className='t-red600'>Visual E Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>t-red700</td>
+                                        <td className='t-red700'>Visual E Text</td>
+                                    </tr>
+
+                                    <tr >
+                                        <td>t-red800</td>
+                                        <td className='t-red800'>Visual E Text</td>
+
+                                    </tr>
+
+                                    <tr >
+                                        <td>t-red900</td>
+                                        <td className='t-red900'>Visual E Text</td>
 
                                     </tr>
 

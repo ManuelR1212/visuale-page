@@ -18,6 +18,18 @@ import JumbotronPage from './pages/comps/jumbotron-page';
 import BreadcrumbPage from './pages/comps/breadcrumb-page';
 import ModalPage from './pages/comps/modal-page';
 import ColorVariables from './pages/docs/variables/color-variables';
+import SliderPage from './pages/comps/slider-page';
+import DisplayBlock from './pages/docs/variables/display-block';
+import DisplayFlex from './pages/docs/variables/dispaly-flex';
+import DisplayNone from './pages/docs/variables/display-none';
+import Border from './pages/simplifiers/borders';
+import Radius from './pages/simplifiers/Radius';
+import Shadow from './pages/simplifiers/shadow';
+import TextColor from './pages/simplifiers/textcolor';
+import Margin from './pages/simplifiers/margin';
+import Padding from './pages/simplifiers/padding';
+import TypoGraphy from './pages/simplifiers/typo';
+import Tables from './pages/simplifiers/tables';
 
 
 function App() {
@@ -45,6 +57,18 @@ function App() {
           <Route path='/breadcrumb' element={<BreadcrumbPage />} />
           <Route path='/modal' element={<ModalPage />} />
           <Route path='/variables' element={<ColorVariables />} />
+          <Route path='/slider' element={<SliderPage/>} />
+          <Route path='/displayblock' element={<DisplayBlock/>} />
+          <Route path='/displayflex' element={<DisplayFlex/>} />
+          <Route path='/displaynone' element={<DisplayNone/>} />
+          <Route path='/border' element={<Border/>} />
+          <Route path='/radius' element={<Radius/>} />
+          <Route path='/shadow' element={<Shadow/>} />
+          <Route path='/textcolor' element={<TextColor/>} />
+          <Route path='/margin' element={<Margin/>} />
+          <Route path='/padding' element={<Padding/>} />
+          <Route path='/text' element={<TypoGraphy/>} />
+          <Route path='/tables' element={<Tables/>} />
         </Routes>
       </BrowserRouter>
 
