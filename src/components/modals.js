@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/framework.css';
+import PropTypes from 'prop-types';
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, content, tittle, className }) => {
     const [isVisible, setIsVisible] = useState(false);
   
     useEffect(() => {
@@ -15,14 +16,21 @@ const Modal = ({ isOpen, onClose, children }) => {
   
     return (
       <div className={`modal ${isVisible ? 'visible' : ''}`}>
-        <div className="modal-content">
+        <div className={`modal-content ${className}`}>
           <button className="close-button" onClick={closeModal}>
             &times;
           </button>
-          {children}
+          <h1>{tittle}</h1>
+         <span>{content}</span> 
         </div>
       </div>
     );
+  };
+
+  Modal.propTypes = {
+    content: PropTypes.string.isRequired,
+    tittle: PropTypes.string,
+    className: PropTypes.string,
   };
 
 export default Modal;

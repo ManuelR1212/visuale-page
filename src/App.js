@@ -16,7 +16,8 @@ import NavbarPage from './pages/comps/navbar-page';
 import SearchbarPage from './pages/comps/searchbar-page';
 import JumbotronPage from './pages/comps/jumbotron-page';
 import BreadcrumbPage from './pages/comps/breadcrumb-page';
-
+import ModalPage from './pages/comps/modal-page';
+import ColorVariables from './pages/docs/variables/color-variables';
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
           <Route path='/searchbar' element={<SearchbarPage />} />
           <Route path='/jumbotron' element={<JumbotronPage />} />
           <Route path='/breadcrumb' element={<BreadcrumbPage />} />
+          <Route path='/modal' element={<ModalPage />} />
+          <Route path='/variables' element={<ColorVariables />} />
         </Routes>
       </BrowserRouter>
 

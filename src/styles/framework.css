@@ -22,13 +22,14 @@ text-decoration: none;
 }
 
 
+
 /* ||||||||||||||||||||||||
           VARIABLES
    |||||||||||||||||||||||| */
 
 
 :root {
-    --background: var(--white100);
+   
     --font: 'Roboto', sans-serif;
     --w-box: 1800px;
 
@@ -67,10 +68,21 @@ text-decoration: none;
     --gray300: #374151;
     --gray400: #1f2937;
 
-    --black50: #111827;
+    --black50: #23282D;
 
 
 }
+
+[data-theme="dark"] {
+    background: #1a1a1a;
+    color: white;
+}
+
+[data-theme="light"] {
+--background: var(--white100);
+    
+}
+
 
 /* ||||||||||||||||||||||||
       DISPLAYS | PANTALLAS
@@ -594,11 +606,13 @@ p {
 .nav a.main,
 .nav a:hover {
     background: var(--gray300);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 576px) {
 .nav a:hover {
     background:none;
+    cursor: pointer;
 }
 }
 
@@ -1083,6 +1097,7 @@ form .inp:focus {
   .footer-links a:hover {
     background: var(--gray100);
     border-radius: 999px;
+    cursor: pointer;
   }
   
   .footer-links li {
@@ -1225,6 +1240,7 @@ Searchbar | Barra de búsqueda
     transition: .3s ease all;
 }
 
+
 /* ||||||||||||||||||||||||
       BORDERS | BORDES
    |||||||||||||||||||||||| */
@@ -1287,6 +1303,7 @@ Searchbar | Barra de búsqueda
   
   .slider-button:hover {
     background-color: #0056b3;
+    cursor: pointer;
   }
 
   
@@ -1307,6 +1324,13 @@ Searchbar | Barra de búsqueda
   
   .hover:hover {
     background: #374151;
+    cursor: pointer;
+  }
+
+  .rounded-hover:hover {
+    background: #374151;
+    border-radius: 9999px;
+    cursor: pointer;
   }
   
   .sidebar.active {
@@ -1328,6 +1352,7 @@ Searchbar | Barra de búsqueda
   .desplegable:hover {
     background-color: #374151;
     border-radius: 9999px;
+    cursor: pointer;
   }
 
     /* Tablets Size | Tamaño Tabletas */
@@ -1378,6 +1403,7 @@ Searchbar | Barra de búsqueda
    
    .hover:hover {
      background: #374151;
+     cursor: pointer;
    }
    
    .sidenav.active {
@@ -1412,6 +1438,7 @@ Searchbar | Barra de búsqueda
   
   .hover:hover {
     background: #374151;
+    cursor: pointer;
   }
   
   .sidenav.active {

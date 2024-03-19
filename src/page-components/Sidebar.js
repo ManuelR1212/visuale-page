@@ -4,12 +4,12 @@ import '../styles/framework.css';
 const Sidebar = ({className}) => {
 
   return (
-    <div className={`sidebar ${className}`}>
-        {<div class='sidebar-scrollbox'>
-          <h1 class="txt-size-5 t-white50 font-normal bottom-margin-7 left-margin-7">Elementos</h1>
+    <div className={`sidebar ${className} b-black50`}>
+        {<div class='sidebar-scrollbox '>
+          <h1 class="txt-size-5 t-white50 font-normal bottom-margin-7 left-margin-7 ">Elementos</h1>
 
           <h2 class="txt-size-5 t-white50 font-normal bottom-margin-3">Escenciales</h2>
-          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Variables CSS</li>
+          <Link to="/variables"><li class="txt-size-3 t-white50 font-light hover left-margin-3">Variables de color</li></Link>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Display Flex</li>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Diseño General</li>
           
@@ -32,6 +32,7 @@ const Sidebar = ({className}) => {
           <Link to='/button'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Button</li></Link>
           <Link to='/footer'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Footer</li></Link>
           <Link to='/jumbotron'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Jumbotron</li></Link>
+          <Link to='/modal'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Modal</li></Link>
           <Link to='/navbar'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Navbar</li></Link>
           <Link to='/searchbar'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Searchbar</li></Link>
           <Link to='/sidebar'><li class="txt-size-3 t-white50 font-light hover left-margin-3">Sidebar</li></Link>
@@ -45,7 +46,7 @@ const Sidebar = ({className}) => {
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Color</li>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Background</li>
           <li class="txt-size-3 t-white50 font-light hover left-margin-3">Margin</li>
-          <li class="txt-size-3 t-white50 font-light hover left-margin-3">Padding</li>
+          <li class="txt-size-3 t-white50 font-light hover left-margin-3 bottom-padding-8">Padding</li>
 
         </div>}
     </div>

@@ -34,18 +34,18 @@ export default function Width() {
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Width</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">El Width es un parámetro que puede ser asignado a casi cualquier elemento dentro del código HTML, siempre y cuando de modificar su altura se trate. El mismo, está dividido en distintos tamaños,
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El Width es un parámetro que puede ser asignado a casi cualquier elemento dentro del código HTML, siempre y cuando de modificar su altura se trate. El mismo, está dividido en distintos tamaños,
                     de manera que puedas escoger el que se adapte mejor a los estilos de tu página web..</p>
 
 
                 <h1 class="display-5 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Tamaños y medidas</h1>
 
                 <div class="card-1">
-                    <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Los números de los Width van de forma ascendente, mientras mayor sea el número de la etiqueta, mayor será el tamaño de la propiedad Width,
+                    <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Los números de los Width van de forma ascendente, mientras mayor sea el número de la etiqueta, mayor será el tamaño de la propiedad Width,
                         como se puede apreciar en la siguiente tabla:</p>
                     <div class="cont-scroll-1">
                         <code>
-                            <table class="centered-table container-2 smt-container-1 full-table responsive-table t-black50 smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
+                            <table class="centered-table container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
                                 <thead>
                                     <tr className='t-white50'>
                                         <th>Tag</th>
@@ -109,7 +109,7 @@ export default function Width() {
                 </div>
             </div>
 
-            <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Puedes utilizar varias etiquetas en distintos elementos, pero no varias etiquetas en un solo elemento, ya que, el
+            <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Puedes utilizar varias etiquetas en distintos elementos, pero no varias etiquetas en un solo elemento, ya que, el
                 código por defecto tomará el tamaño mayor.</p>
 
             <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
@@ -122,14 +122,14 @@ export default function Width() {
 
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3  container-3 smt-container-1">Responsividad</h1>
 
-                <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm">Los width pueden ser utilizadas por distintos tamaños de pantalla,
+                <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm justify-txt">Los width pueden ser utilizadas por distintos tamaños de pantalla,
                     por lo que, es necesario que los mismos posean una responsividad adecuada adaptada mediante <b>@mediaquerys</b>,
                     las cuales comprenden múltiples proporciones para distintos tamaños de pantalla.</p>
 
                 <div class="cont-scroll-1">
 
                     <code>
-                        <table class="centered-table container-2 smt-container-1 full-table responsive-table t-black50 smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
+                        <table class="centered-table container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
                             <thead>
                                 <tr className='t-white50'>
                                     <th>tag</th>

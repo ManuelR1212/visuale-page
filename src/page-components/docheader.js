@@ -5,6 +5,16 @@ import SideNav from '../page-components/SideNav';
 import Logo from '../images/Logo2.png'
 
 const DocHeader = () => {
+
+  function switchTheme() {
+    const currentTheme = document.documentElement.dataset.theme;
+    if (currentTheme === 'dark') {
+      document.documentElement.dataset.theme = 'light';
+    } else {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  }
+
     const [sidebarActive, setSidebarActive] = useState(false);
     const sidebarRef = useRef(null);
   
@@ -48,7 +58,7 @@ const DocHeader = () => {
 
     return (
       <>
-        <nav className="nav b-gray400 shadow-8">
+        <nav className="nav b-black50 shadow-8">
           <div>
 
             <header>
@@ -61,6 +71,7 @@ const DocHeader = () => {
             <Link to='/home'><p className='t-white50 txt-size-4 smt-txt-size-1sm margin-none'>Inicio</p></Link>
             <Link to="/container"><p className='t-white50 txt-size-4 smt-txt-size-1sm margin-none'>Documentación</p></Link>
             <Link to="/components"><p className='t-white50 txt-size-4 smt-txt-size-1sm margin-none'>Componentes</p></Link>
+            <button onClick={switchTheme} className='top-padding-0 b-none border-none txt-size-8 rounded-hover '>🌓</button>
           </div>
 
           <div>

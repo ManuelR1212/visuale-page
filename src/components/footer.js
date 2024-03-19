@@ -4,7 +4,7 @@ import '../styles/framework.css';
 const Footer = () => {
   return (
 <>
-    <footer className="footer b-gray400">
+    <footer className="footer b-black50">
 
     <div className='smt-d-none pos-absolute'>
     <h3 className='left-txt top-margin-5 tab-txt-size-5 smt-txt-size-4sm'>Visual E</h3>

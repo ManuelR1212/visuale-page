@@ -2,6 +2,7 @@ import DocHeader from "../../page-components/docheader";
 import React from 'react';
 import Footer from "../../components/footer";
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import CopyButton from "../../page-components/CopyButton";
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function FooterPage() {
@@ -60,19 +61,20 @@ export default function FooterPage() {
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Footer</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">En Visual E, el footer o pie de página, como su nombre lo indica, es aquel espacio inferior de la página web en donde se almacenará información relevante sobre la misma; como puede ser derechos de autor,
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">En Visual E, el footer o pie de página, como su nombre lo indica, es aquel espacio inferior de la página web en donde se almacenará información relevante sobre la misma; como puede ser derechos de autor,
                     enlaces o incluso una breve descripción sobre el sitio web de una forma breve y concisa.</p>
             </div>
 
             <section class="container-3 smt-container-1 tab-container-2">
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Uso del Footer</h1>
-                <div class="container-2 smt-container-1 card-1 b-white50 tab-container-1">
+                <div class="container-2 smt-container-1 card-1 tab-container-1">
 
-                    <p class="container-1 smt-container-1 top-margin-9 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">El footer al ser un componente estático y de uso continuo, debe adoptar propiedades y elementos dentro del archivo js del componente. Básicamente, toda la información debe ser plasmada de forma única, mostrando la misma en todas las rutas de la página web. 
+                    <p class="container-1 smt-container-1 top-margin-9 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El footer al ser un componente estático y de uso continuo, debe adoptar propiedades y elementos dentro del archivo js del componente. Básicamente, toda la información debe ser plasmada de forma única, mostrando la misma en todas las rutas de la página web. 
                     Sin embargo,podrás usar los estilos de Visual E a tus necesidades.
                     </p>
 
                     <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString1} />
                         <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
                             {codeString1}
                         </SyntaxHighlighter>
@@ -87,18 +89,19 @@ export default function FooterPage() {
             <section class="container-3 smt-container-1 tab-container-2">
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Ejemplo de uso</h1>
 
-                <div class="container-2 smt-container-1 card-1 b-white50 tab-container-1">
+                <div class="container-2 smt-container-1 card-1 tab-container-1">
 
-                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Para agregar un footer dentro de tu proyecto, debes importar el componente con el mismo nombre:.</p>
+                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Para agregar un footer dentro de tu proyecto, debes importar el componente con el mismo nombre:.</p>
 
 
                     <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString2} />
                         <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
                             {codeString2}
                         </SyntaxHighlighter>
                     </div>
 
-                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">¿Qué mejor resultado de este ejemplo que nuestro propio footer? ¡Échale un ojo!</p>
+                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">¿Qué mejor resultado de este ejemplo que nuestro propio footer? ¡Échale un ojo!</p>
                 </div>
 
             </section>

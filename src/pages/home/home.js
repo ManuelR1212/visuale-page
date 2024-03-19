@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import Header from '../../page-components/header'
 import Footer from '../../components/footer';
+import CopyButton from '../../page-components/CopyButton';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 
 export default function Home() {
     useEffect(() => {
@@ -45,16 +47,14 @@ export default function Home() {
      </body> 
      
    </html>     `;
-
-
-
+   
 
     return (
         <>
 
             <Header />
 
-            <div>
+            <div className=''>
 
                 <div class="b-red500 top-margin-0">
                     <h1 class="display-3 smt-display-5 tab-display-4 left-padding-3 container-1 top-margin-0 top-padding-2 t-white50">Inicio</h1>
@@ -63,17 +63,17 @@ export default function Home() {
 
                 <div class="container-3 smt-container-2 tab-container-3">
                     <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Visual E</h1>
-                    <h2 class="font-normal tab-txt-size-6 smt-txt-size-4sm">Un framework de estilos dirigido a sitios web informativos, intuitivo, compacto y fácil de utilizar.</h2>
+                    <h2 class="font-normal tab-txt-size-6 smt-txt-size-4sm center-txt">Un framework de estilos dirigido a sitios web informativos, intuitivo, compacto y fácil de utilizar.</h2>
                 </div>
 
                 <section class="container-4 smt-container-2">
                     <h2 class="display-3 smt-display-6 tab-display-4 smt-container-1 top-padding-5 bottom-margin-3">Inicio rápido</h2>
-                    <p class="smt-container-1 smt-txt-size-2sm tab-txt-size-5sm top-margin-0 bottom-padding-5">Antes de comenzar con la creación de tus proyectos web, es necesario que conozcas todos los pasos
+                    <p class="smt-container-1 smt-txt-size-2sm tab-txt-size-5sm top-margin-0 bottom-padding-5 justify-txt">Antes de comenzar con la creación de tus proyectos web, es necesario que conozcas todos los pasos
                         necesarios para la instalación de tu framework de estilos preferido.
                     </p>
 
                     <div class="card-1">
-                        <p class="smt-container-1 smt-txt-size-2sm tab-txt-size-5sm top-margin-0 bottom-padding-5">Puedes comenzar la instalación de Visual E en tus proyectos de manera sencilla, utilizando nuestro link CDN,
+                        <p class="smt-container-1 smt-txt-size-2sm tab-txt-size-5sm top-margin-0 bottom-padding-5 justify-txt">Puedes comenzar la instalación de Visual E en tus proyectos de manera sencilla, utilizando nuestro link CDN,
                             el cual te proporcionará únicamente la capacidad de utilizar los estilos CSS de Visual E, sin necesidad de descargar ningún archivo.
                         </p>
                         <h3 class="smt-txt-size-4">Link CDN</h3>
@@ -99,27 +99,28 @@ export default function Home() {
 
                         <p class="top-margin-8 smt-txt-size-2sm tab-txt-size-5sm">Para agregar el link CDN de Visual E a tu proyecto, debes seguir los pasos a continuación:</p>
 
-                        <p class="top-margin-8 bottom-margin-0 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm"><b>1:</b> Crea un archivo dentro de la raíz de tu proyecto, hablamos de un archivo como <b>"index.html"</b>, asegúrate de que tenga la etiqueta
-                            <b>aaa</b>, esto garantiza una mayor responsivdad para dispositivos móbiles.
+                        <p class="top-margin-8 bottom-margin-0 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm justify-txt"><b>1:</b> Crea un archivo dentro de la raíz de tu proyecto, hablamos de un archivo como <b>"index.html"</b>, asegúrate de que tenga la etiqueta <b>meta</b>, esto garantiza una mayor responsivdad para dispositivos móbiles.
                         </p>
 
-                        <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                        <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1 '>
+                            <CopyButton text={codeString1} />
                             <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                                 {codeString1}
                             </SyntaxHighlighter>
                         </div>
 
-                        <p class="top-margin-8 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm bottom-margin-0"><b>2:</b> Dentro del archivo html creado, copia el link del CDN de Visual E y añade una etiqueta <b>"link"</b> dentro de el <b>"header"</b>,
+                        <p class="top-margin-8 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm bottom-margin-0 justify-txt"><b>2:</b> Dentro del archivo html creado, copia el link del CDN de Visual E y añade una etiqueta <b>"link"</b> dentro de el <b>"header"</b>,
                             en esta etiqueta pega el link del CDN en el <b>"href"</b>, de la siguiente manera:
                         </p>
 
                         <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                            <CopyButton text={codeString2} />
                             <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
                                 {codeString2}
                             </SyntaxHighlighter>
                         </div>
 
-                        <p class="top-margin-0 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm"><b>3:</b> ¡Todo listo! Si seguiste los pasos correctamente, entonces significa que ya puedes utilizar todos los estilos y etiquetas
+                        <p class="top-margin-0 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm justify-txt"><b>3:</b> ¡Todo listo! Si seguiste los pasos correctamente, entonces significa que ya puedes utilizar todos los estilos y etiquetas
                             de Visual E en tu proyecto, recuerda, esto es solo un link CDN; cuando quieras volver a utilizarlo en otro proyecto debes repetir el procedimiento.
                         </p>
 

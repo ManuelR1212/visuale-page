@@ -1,11 +1,13 @@
 import DocHeader from "../../page-components/docheader";
 import React from 'react';
 import Footer from "../../components/footer";
-
+import CopyButton from "../../page-components/CopyButton";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function SidebarPage() {
+
+    const enlace = 'https://www.ejemplo.com';
 
     const codeString1 = `import '../styles/framework.css';
 
@@ -23,7 +25,7 @@ export default function SidebarPage() {
     export default Sidebar;`
 
     const codeString2 = `import { Link } from 'react-router-dom';
-    import '../styles/framework.css';
+import '../styles/framework.css';
     
     const Sidebar = ({className}) => {
     
@@ -78,19 +80,19 @@ export default function SidebarPage() {
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Sidebar</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">El Sidebar de Visual E, se encarga de almacenar información o principalmente enlaces, dentro de sí mismo, d
-                    e manera que el usuario podrá acceder a distintas rutas de la web de una forma dinámica y bastante sencilla.</p>
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El Sidebar de Visual E, se encarga de almacenar información o principalmente enlaces, dentro de sí mismo, de manera que el usuario podrá acceder a distintas rutas de la web de una forma dinámica y bastante sencilla.</p>
             </div>
 
             <section class="container-3 smt-container-1 tab-container-2">
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Uso del Sidebar</h1>
-                <div class="container-2 smt-container-1 card-1 b-white50 tab-container-1">
+                <div class="container-2 smt-container-1 card-1 tab-container-1">
 
-                    <p class="container-1 smt-container-1 top-margin-9 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Nuestro sidebar parece bastante complejo, sin embargo, es bastante sencillo. El mismo cuenta con una función que le permite ocultarse tras un menú hamburguesa que al ser clickeado desplegará por completo el sidebar.
+                    <p class="container-1 smt-container-1 top-margin-9 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Nuestro sidebar parece bastante complejo, sin embargo, es bastante sencillo. El mismo cuenta con una función que le permite ocultarse tras un menú hamburguesa que al ser clickeado desplegará por completo el sidebar.
                         Al dar click en cualquier parte de la página fuera del mismo, nuestro sidebar se ocultará como si nada hubiera pasado.
                     </p>
 
                     <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                        <CopyButton text={codeString1} />
                         <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
                             {codeString1}
                         </SyntaxHighlighter>
@@ -105,19 +107,19 @@ export default function SidebarPage() {
             <section class="container-3 smt-container-1 tab-container-2">
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Ejemplo de uso</h1>
 
-                <div class="container-2 smt-container-1 card-1 b-white50 tab-container-1">
+                <div class="container-2 smt-container-1 card-1 tab-container-1">
 
-                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Es importante tener en cuenta que el sidebar es completamente modificable, si se desea que el mismo no se encuentre dentro de un menú hamburguesa, solo accede sus clases de Visual E y desactiva la propiedad <b>sidebar</b>,
+                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Es importante tener en cuenta que el sidebar es completamente modificable, si se desea que el mismo no se encuentre dentro de un menú hamburguesa, solo accede sus clases de Visual E y desactiva la propiedad <b>sidebar</b>,
                         de esta manera el sidebar estará listo para que lo modifiques como más te guste.</p>
 
-
                     <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                        <CopyButton text={codeString2} />
                         <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
                             {codeString2}
                         </SyntaxHighlighter>
                     </div>
 
-                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">¿Qué mejor resultado de este ejemplo que nuestro propio sidebar? ¡Échale un ojo!</p>
+                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">¿Qué mejor resultado de este ejemplo que nuestro propio sidebar? ¡Échale un ojo!</p>
                 </div>
 
             </section>

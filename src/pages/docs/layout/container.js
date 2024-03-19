@@ -47,16 +47,16 @@ export default function Container() {
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Containers</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">Los containers en son elementos que envuelven y contienen otros elementos.
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Los containers en son elementos que envuelven y contienen otros elementos.
                     Pueden ser utilizados para aplicar estilos; como márgenes, rellenos, anchos y alturas a un grupo de elementos.</p>
 
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1">En Visual.E, los containers son fundamentales al momento de desarrollar tu página web, ya que facilitan la contención de distintos componentes.
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">En Visual.E, los containers son fundamentales al momento de desarrollar tu página web, ya que facilitan la contención de distintos componentes.
                     Pueden ser utilizados para agregar espacios, márgenes e incluso para centrar elementos y mantenerlos ordenados.</p>
             </div>
 
             <section class="container-3 smt-container-1 tab-container-2">
-                <div class="container-2 smt-container-1 card-1 b-white50 tab-container-1">
-                    <p class="container-3 smt-container-1 tab-container-2 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm">Visual.E proporciona distintos tipos de containers con medidas individuales,
+                <div class="container-2 smt-container-1 card-1 tab-container-1">
+                    <p class="container-3 smt-container-1 tab-container-2 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm justify-txt">Visual.E proporciona distintos tipos de containers con medidas individuales,
                         completamente responsive hasta el punto de quiebre:</p>
 
                     <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
@@ -66,12 +66,12 @@ export default function Container() {
                     </div>
 
 
-                    <p class="container-2 smt-container-1 tab-container-2 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm">Los containers en Visual.E te ofrecen distintas medidas basadas en porcentajes ocupados por la pantalla.
+                    <p class="container-2 smt-container-1 tab-container-2 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm justify-txt">Los containers en Visual.E te ofrecen distintas medidas basadas en porcentajes ocupados por la pantalla.
                         Se definen principalmente por la variable --w-box y por un max-width, que limita las dimensiones del contenedor, así como estilos que mejoran su posicionamiento responsive y centrado:</p>
 
                     <div class="cont-scroll-1">
                         <code>
-                            <table class="centered-table container-2 smt-container-1 full-table responsive-table t-black50 smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
+                            <table class="centered-table container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
                                 <thead>
                                     <tr className='t-white50'>
                                         <th>Tag</th>
@@ -114,7 +114,7 @@ export default function Container() {
 
                 <div>
                     <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Ejemplos de uso</h1>
-                    <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm">Un container puede ser utilizado en cualquier parte de tu código HTML, siempre y
+                    <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm justify-txt">Un container puede ser utilizado en cualquier parte de tu código HTML, siempre y
                         cuando quieras mantener un orden de los elementos específico, basado en porcentajes ocupados en la pantalla.</p>
                 </div>
 
@@ -152,7 +152,7 @@ export default function Container() {
                     </div>
                 </div>
 
-                <p class="container-2 top-margin-0 bottom-padding-5 smt-container-2 smt-txt-size-2sm tab-txt-size-5sm">El número de la etiqueta de cada container alterará su porcentaje ocupado en pantalla. Mientras el
+                <p class="container-2 top-margin-0 bottom-padding-5 smt-container-2 smt-txt-size-2sm tab-txt-size-5sm justify-txt">El número de la etiqueta de cada container alterará su porcentaje ocupado en pantalla. Mientras el
                     número de la etiqueta sea mayor, el porcentaje irá disminuyendo en un 10%. Los container usan propiedades de "padding" y "margin" para ordenar sus elementos, como se observó en el ejemplo:
                 </p>
 
@@ -162,7 +162,7 @@ export default function Container() {
 
                 </div>
 
-                <p class="container-2 top-margin-0 bottom-padding-5 smt-container-2 smt-txt-size-2sm tab-txt-size-5sm">Puedes usar un container dentro de otro. Juega con sus propiedades para crear estilos totalmente originales:
+                <p class="container-2 top-margin-0 bottom-padding-5 smt-container-2 smt-txt-size-2sm tab-txt-size-5sm justify-txt">Puedes usar un container dentro de otro. Juega con sus propiedades para crear estilos totalmente originales:
                 </p>
 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
@@ -180,17 +180,17 @@ export default function Container() {
                     </div>
                 </div>
 
-                <div className='card-1'>
+                <div className='card-1 top-margin-11'>
                     <div>
                         <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3  container-3 smt-container-1">Responsividad</h1>
-                        <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm">Los containers pueden ser utilizados por distintos tamaños de pantalla,
+                        <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-0 bottom-padding-5 tab-txt-size-5sm justify-txt">Los containers pueden ser utilizados por distintos tamaños de pantalla,
                             por lo que, es necesario que los mismos posean una responsividad adecuada adaptada mediante <b>@mediaquerys</b>,
                             las cuales comprenden múltiples proporciones para distintos tamaños de pantalla.</p>
                     </div>
 
                     <div class="cont-scroll-1">
                         <code>
-                            <table class="centered-table container-2 smt-container-1 full-table responsive-table t-black50 smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
+                            <table class="centered-table container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">
                                 <thead>
                                     <tr className='t-white50'>
                                         <th>tag</th>
@@ -232,7 +232,7 @@ export default function Container() {
                         </code>
                     </div>
                 </div>
-                <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-7 tab-txt-size-5sm">Mostrado en un ejemplo, los containers adaptados a mediaquerys se verán de la siguiente manera:</p>
+                <p class="container-3 smt-container-1 smt-txt-size-2sm top-margin-7 tab-txt-size-5sm justify-txt">Mostrado en un ejemplo, los containers adaptados a mediaquerys se verán de la siguiente manera:</p>
                 
                 <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
                     <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
@@ -240,7 +240,7 @@ export default function Container() {
                     </SyntaxHighlighter>
                 </div>
 
-                <p class="container-3 smt-container-1 smt-txt-size-2sm bottom-margin-10 tab-txt-size-5sm">Optimiza tu código junto a los mediaquerys, creando distintos estilos funcionales para todos los dispositivos. De manera sencilla, 
+                <p class="container-3 smt-container-1 smt-txt-size-2sm bottom-margin-10 tab-txt-size-5sm justify-txt">Optimiza tu código junto a los mediaquerys, creando distintos estilos funcionales para todos los dispositivos. De manera sencilla, 
                 a través del uso de clases los mediaquerys para containers permiten adaptar el contenido que desees para el tamaño de pantalla que mas se adapte a tus necesidades.</p>
 
             </section>
