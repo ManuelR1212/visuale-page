@@ -9,7 +9,7 @@ const Breadcrumbs = ({ items, className, classNameLi }) => {
         {items.map((item, index) => (
           <li key={index}>
             {item.link ? (
-              <a className={classNameLi}>{item.label}</a>
+              <a href="" className={classNameLi}>{item.label}</a>
             ) : (
               <span>{item.label}</span>
             )}
