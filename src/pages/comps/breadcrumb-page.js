@@ -16,10 +16,10 @@ export default function BreadcrumbPage() {
     };
 
     const breadcrumbsItems = [
-        { label: 'Inicio >', link: '/' },
-        { label: 'Productos >', link: '/productos' },
-        { label: product.category, link: `/productos/${product.category}` },
-        { label: product.name, link: `/productos/${product.category}/${product.id}` },
+        { label: 'Inicio >', link: 'https://github.com/visual-e-ve/visuale-page?tab=readme-ov-file' },
+        { label: 'Productos >', link: 'https://github.com/visual-e-ve/visuale-page?tab=readme-ov-file' },
+        { label: product.category, link: `https://github.com/visual-e-ve/visuale-page?tab=readme-ov-file` },
+        { label: product.name, link: `https://github.com/visual-e-ve/visuale-page?tab=readme-ov-file` },
     ];
 
 
