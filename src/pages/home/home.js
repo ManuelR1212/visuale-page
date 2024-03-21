@@ -19,35 +19,18 @@ export default function Home() {
     }, []);
 
 
-    const codeString1 = `
-    <!doctype html> 
-    <html lang="en"> <head> 
-     <meta charset="utf-8"> 
-     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-     <title>Visual E Project</title>
-
-     </head> 
-     <body> 
-     <h1>Esto es un ejemplo!</h1> 
-     </body> 
-
-    </html>     `;
-
-    const codeString2 = `<!doctype html> 
-   <html lang="en"> 
-    <head> 
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Visual E Project</title> 
-   <link href="cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.css"> 
-    </head> 
+    const codeString1 = `import Button from "/node_modules/visual-e/components;
     
-     <body> 
-      <h1>Esto es un ejemplo!</h1> 
-     </body> 
-     
-   </html>     `;
-   
+<div class="card-1 container-">
+ <Button content={"Soy un botón!"} </Button>`
+
+    const codeString2 = `import Button from "/node_modules/visual-e/components;
+
+    <Jumbotron title="Noticia de última hora!" description="Un simio fue visto a las afueras de un zoologico tocando una serenata."/>
+
+
+   <Jumbotron title="¡Maquillaje" description="Te quita mas de veinte años de encima, ¡vísitanos!"/>`
+
 
     return (
         <>
@@ -90,7 +73,7 @@ export default function Home() {
                                 <tbody>
                                     <tr class="">
                                         <td class="">CSS</td>
-                                        <td>cdn.jsdelivr.net/npm/visual-e-cdn@1.0.0/visual-e.min.css</td>
+                                        <td>https://cdn.jsdelivr.net/npm/visual-e@1.0.4/styles/framework.min.css</td>
                                     </tr>
                                 </tbody>
 
@@ -123,6 +106,68 @@ export default function Home() {
                         <p class="top-margin-0 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm justify-txt"><b>3:</b> ¡Todo listo! Si seguiste los pasos correctamente, entonces significa que ya puedes utilizar todos los estilos y etiquetas
                             de Visual E en tu proyecto, recuerda, esto es solo un link CDN; cuando quieras volver a utilizarlo en otro proyecto debes repetir el procedimiento.
                         </p>
+
+                    </div>
+
+
+                    <div class="card-1">
+                        <p class="smt-container-1 smt-txt-size-2sm tab-txt-size-5sm top-margin-0 bottom-padding-5 justify-txt">Visual E también ofrece una versión adaptada a ReactJs, perfecta para todos aquellos usuarios que quieran experimentar con sus proyectos de React y
+                            los componentes de Visual E.
+                        </p>
+                        <h3 class="smt-txt-size-4">Comando NPM & YARN</h3>
+
+                        <div class="cont-scroll-1">
+                            <table class="centered-table full-table responsive-table smt-container-1 t-white50 smt-txt-size-1sm td-borderbottom-s1 th-borderbottom-s1 th-b-gray400 td-b-gray400">
+                                <thead>
+                                    <tr>
+                                        <th>Comando</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="">
+                                        <td>$ npm install visual-e</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>$ yarn add visual-e</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                        <p class="top-margin-8 smt-txt-size-2sm tab-txt-size-5sm">Antes de instalar Visual E en tus proyectos, asegurate de tener una versión de Node.js v21.1.0 o superior en tu sistema.
+                            Lo siguiente es ejecutar el comando de instalación de Visual E usando npm en la raíz de tu proyecto de React.</p>
+
+                        <p class="top-margin-8 bottom-margin-0 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm justify-txt">Esto hará que npm instale todos los paquetes
+                            necesarios para que puedas utilizar Visual E en tus proyectos de React. npm arrojará una carpeta con todos los componentes de Visual E, además de otorgarte la posibilidad de utilizar todos los estilos CSS del framework. Una vez terminado el proceso, es necesario que importes las carpetas "components" y
+                            "styles" en los archivos de tu proyecto que requieran de la mano de Visual E.
+                        </p>
+
+                    </div>
+                    <h2 class="display-3 smt-display-6 tab-display-4 smt-container-1 top-padding-5 bottom-margin-3">Tutoriales</h2>
+
+                    <div class="card-1">
+
+                        <p class="top-margin-8 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm bottom-margin-0 justify-txt">Esta es una demostración de como se utiliza el componente <b>Button</b> dentro de una aplicación de Reactjs.
+
+                            <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1 '>
+                                <CopyButton text={codeString1} />
+                                <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
+                                    {codeString1}
+                                </SyntaxHighlighter>
+                            </div>
+
+                        </p>
+
+                        <p class="top-margin-8 container-2 smt-container-1 smt-txt-size-2sm tab-txt-size-5sm bottom-margin-0 justify-txt">Esta es una demostración de como se utiliza el componente <b>Jumbotron</b> dentro de una aplicación de Reactjs.</p>
+
+                            <div className='cont-scroll-2 container-2 tab-txt-size-2 smt-txt-size-1'>
+                                <CopyButton text={codeString2} />
+                                <SyntaxHighlighter language="html" style={docco} wrapLongLines={true}>
+                                    {codeString2}
+                                </SyntaxHighlighter>
+                            </div>
 
                     </div>
                 </section>

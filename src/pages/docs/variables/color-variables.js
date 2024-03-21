@@ -31,7 +31,7 @@ export default function ColorVariables() {
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Variables de Color</h1>
                 <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Visual E te ofrece una amplia cantidad de variables de color, las cuales vienen predefinas y utilizadas por defecto dentro de los colores para las etiquetas. Como pueden ser 
-                ; colores de fondo, textos, bordes, sombreados, etc... Nuestro framework d estilos brinda tonalidades referentes a nuestra paleta de colores oficial para la documentación. Si eres desarrollador y quieres aportar más colores a nuestras variables, no esperes más tiempo!</p>
+                ; colores de fondo, textos, bordes, sombreados, etc... Nuestro framework de estilos brinda tonalidades referentes a nuestra paleta de colores oficial para la documentación. Si eres desarrollador y quieres aportar más colores a nuestras variables, ¡no esperes más tiempo!</p>
 
             </div>
 

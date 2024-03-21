@@ -30,7 +30,7 @@ export default function TypoGraphy() {
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Tipografía</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Visual E, ofrece una tipografía por defecto, Roboto. Sin embargo, puedes implementar o importar cualquiet tipo de fuente que desees.
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Visual E, ofrece una tipografía por defecto, Roboto. Sin embargo, puedes implementar o importar cualquier tipo de fuente que desees.
                     Por otro lado, Visual E cuenta con numerosos selectores de clases para tus textos, vamos a echarles un vistazo.</p>
 
             </div>

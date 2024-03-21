@@ -125,8 +125,8 @@ export default function ColRo() {
 
 
             <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Sencillamente se debe establecer el número de columnas
-                bajo la etiqueta "col" más el número de columnas "4", dando como resultado "col-4" indicando en la étiqueta la cantidad de columnas que debe llevar la propiedad "col". Con esto,
-                la págian interpretará el número de columnas, a la espera de la información introducida en las mismas.</p>
+                bajo la etiqueta "col" más el número de columnas "4", dando como resultado "col-4" indicando en la etiqueta la cantidad de columnas que debe llevar la propiedad "col". Con esto,
+                la página interpretará el número de columnas, a la espera de la información introducida en las mismas.</p>
 
             <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">En Visual E ofrecemos columnas para todo tipo de pantallas. Asegurando
                 una responsividad absoluta al momento de utilizarlas. De manera que, si el tamaño de la pantalla del dispositivo se va haciendo pequeño, puedes reducir el número de columnas basandote en las dimensiones

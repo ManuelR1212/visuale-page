@@ -35,7 +35,7 @@ export default function Grids() {
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Grid</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El Grid es un etiqueta sencilla, que se encargar de ordenar todos los elementos de un contenedor, de manera que, si el mismo contiene varios elementos por separado, sean ordenados con una separación coherente entre ellos,
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El Grid es un etiqueta sencilla, que se encarga de ordenar todos los elementos de un contenedor, de manera que, si el mismo contiene varios elementos por separado, sean ordenados con una separación coherente entre ellos,
                     agregando estilos funcionales y correctos.</p>
 
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Ejemplo de uso</h1>
@@ -55,7 +55,7 @@ export default function Grids() {
                 </div>
 
                 <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">Los Grid reciben un <b>display='grid'</b> el cual se encarga de ordenar los elementos,
-                    por otro lado, se usa un <b>gap</b> de 30px para una separación coherente entre los elementos, sin embargo, puede ser modificada a gusto. Por ultimo, se tiene un <b>margin</b> de
+                    por otro lado, se usa un <b>gap</b> de 30px para una separación coherente entre los elementos, sin embargo, puede ser modificada a gusto. Por último, se tiene un <b>margin</b> de
                     20px, para dar un espaciado exterior completamente modificable.</p>
             </div>
 

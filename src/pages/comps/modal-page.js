@@ -74,7 +74,7 @@ import '../styles/framework.css';
 
             <div class="container-3 smt-container-1 tab-container-3">
                 <h1 class="display-1 smt-display-5 tab-display-2 center-txt bottom-margin-3 container-3 smt-container-1">Modal</h1>
-                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El Modal en de Visual E es una ventana emergente que se superpone al contenido principal de una página web. Este cuador de diálogo,
+                <p class="container-3 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">El Modal en de Visual E es una ventana emergente que se superpone al contenido principal de una página web. Este cuadro de diálogo,
                     permite mostrar información adicional de manera no intrusiva. Al abrir el modal, se oscurece el fondo y se presenta un contenido específico, como formularios, detalles o mensajes. El Modal puede cerrarse al presionar la “x”. Solo se puede tener un modal abierto a la vez, esto evita que se abran múltiples ventanas emergentes simultáneamente</p>
             </div>
 

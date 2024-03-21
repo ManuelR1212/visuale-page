@@ -92,7 +92,7 @@ export default function NavbarPage() {
                         </SyntaxHighlighter>
                     </div>
 
-                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">¿Qué mejor resultado de este ejemplo que nuestro propio sidebar? ¡Échale un ojo!</p>
+                    <p class="container-1 smt-container-1 top-margin-0 bottom-padding-5 smt-txt-size-2sm tab-txt-size-5sm tab-container-1 justify-txt">¿Qué mejor resultado de este ejemplo que nuestro propio navbar? ¡Échale un ojo!</p>
                 </div>
 
             </section>
