@@ -33,10 +33,9 @@ export default function Components() {
   
   export default Accordion;`
 
-  const codeString2 = `<div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
-  <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
-    {codeString1}
-  </SyntaxHighlighter>
+  const codeString2 = `<div>
+  <Accordion className="accordion width-4 container-3 tab-container-2 smt-container-1" classNamebtn="b-blue500 round-3 t-white50 smt-txt-size-1sm tab-txt-size-5sm" title="¡Da click aquí para abrir y cerrar el acordeón!" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  " classNamectn="b-blue200 justify-txt smt-txt-size-1sm tab-txt-size-5sm" />
 </div>`
 
   return (

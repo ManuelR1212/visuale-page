@@ -117,7 +117,7 @@ export default function ColorVariables() {
                                     </tr>
 
                                     <tr >
-                                        <td>--black50</td>
+                                        <td>--black500</td>
                                         <td className='b-black50'></td>
 
                                     </tr>

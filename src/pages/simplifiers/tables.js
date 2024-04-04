@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import DocHeader from '../../page-components/docheader';
 import Footer from '../../components/footer';
+import CopyButton from "../../page-components/CopyButton";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 
 
 export default function Tables() {
@@ -15,6 +19,13 @@ export default function Tables() {
         };
     }, []);
 
+    const codeString1 = `<table class="container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">`
+
+    const codeString2 = `<table class="container-2 cont-scroll-1 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">`
+
+    const codeString3 = `<table class="zebra-table container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">`
+    
+    const codeString4 = `<table class="centered-table container-2 smt-container-1 full-table responsive-table smt-txt-size-2sm td-border-s1 th-border-s2 th-b-gray400 th-border-s1 th-bd-black50">`
 
     return (
         <>
@@ -43,6 +54,15 @@ export default function Tables() {
 
             <section class="container-3 smt-container-1 tab-container-2">
 
+
+                <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString1} />
+                    <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+                        {codeString1}
+                    </SyntaxHighlighter>
+                </div>
+
+
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Tablas Generales</h1>
                 <div class="container-2 smt-container-1 card-1 tab-container-1">
 
@@ -65,7 +85,7 @@ export default function Tables() {
 
                                     </tr>
                                     <tr>
-                                        <td>African Anacond</td>
+                                        <td>African</td>
                                         <td>19</td>
                                         <td>Comandante</td>
                                     </tr>
@@ -86,6 +106,13 @@ export default function Tables() {
                             </table>
                         </code>
                     </div>
+                </div>
+
+                <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString2} />
+                    <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+                        {codeString2}
+                    </SyntaxHighlighter>
                 </div>
 
 
@@ -111,7 +138,7 @@ export default function Tables() {
 
                                     </tr>
                                     <tr>
-                                        <td>African Anacond</td>
+                                        <td>African</td>
                                         <td>19</td>
                                         <td>Comandante</td>
                                     </tr>
@@ -133,7 +160,7 @@ export default function Tables() {
 
                                     </tr>
                                     <tr>
-                                        <td>African Anacond</td>
+                                        <td>African</td>
                                         <td>19</td>
                                         <td>Comandante</td>
                                     </tr>
@@ -154,6 +181,13 @@ export default function Tables() {
                             </table>
                         </code>
                     </div>
+                </div>
+
+                <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString3} />
+                    <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+                        {codeString3}
+                    </SyntaxHighlighter>
                 </div>
 
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Tablas Zebra</h1>
@@ -178,7 +212,7 @@ export default function Tables() {
 
                                     </tr>
                                     <tr>
-                                        <td>African Anacond</td>
+                                        <td>African</td>
                                         <td>19</td>
                                         <td>Comandante</td>
                                     </tr>
@@ -196,6 +230,13 @@ export default function Tables() {
                             </table>
                         </code>
                     </div>
+                </div>
+
+                <div className='cont-scroll-2 container-2 txt-size-4 tab-txt-size-2 smt-txt-size-1'>
+                    <CopyButton text={codeString4} />
+                    <SyntaxHighlighter language="js" style={atomOneDark} wrapLongLines={true}>
+                        {codeString4}
+                    </SyntaxHighlighter>
                 </div>
 
                 <h1 class="display-2 smt-display-5 tab-display-4 left-txt bottom-margin-3 container-3 smt-container-1">Tablas Centradas</h1>
@@ -220,7 +261,7 @@ export default function Tables() {
 
                                     </tr>
                                     <tr>
-                                        <td>African Anacond</td>
+                                        <td>African</td>
                                         <td>19</td>
                                         <td>Comandante</td>
                                     </tr>
@@ -242,7 +283,7 @@ export default function Tables() {
 
                                     </tr>
                                     <tr>
-                                        <td>African Anacond</td>
+                                        <td>African</td>
                                         <td>19</td>
                                         <td>Comandante</td>
                                     </tr>

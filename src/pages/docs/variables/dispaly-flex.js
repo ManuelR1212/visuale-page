@@ -64,15 +64,15 @@ export default function DisplayFlex() {
                     <div class="container-3 card-1 d-flex b-red200 col-3 grid-u smt-col-3 tab-col-3 round-8 smt-txt-size-1 tab-txt-size-5sm">
 
                         <div>
-                            <h2 class="card-1 b-red400 round-8 smt-txt-size-1sm tab-txt-size-1sm top-padding-3 bottom-padding-3 left-padding-3 right-padding-3">Display Flex</h2>
+                            <h2 class="card-1 b-red400 round-8 smt-txt-size-1sm tab-txt-size-1sm top-padding-3 bottom-padding-3 left-padding-3 right-padding-3">Display Flex 1</h2>
                         </div>
 
                         <div>
-                            <h2 class="card-1 b-red400 round-8 smt-txt-size-1sm tab-txt-size-1sm top-padding-3 bottom-padding-3 left-padding-3 right-padding-3 ">Display Flex</h2>
+                            <h2 class="card-1 b-red400 round-8 smt-txt-size-1sm tab-txt-size-1sm top-padding-3 bottom-padding-3 left-padding-3 right-padding-3 ">Display Flex 2</h2>
                         </div>
 
                         <div>
-                            <h2 class="card-1 b-red400 round-8 smt-txt-size-1sm tab-txt-size-1sm top-padding-3 bottom-padding-3 left-padding-3 right-padding-3 ">Display Flex</h2>
+                            <h2 class="card-1 b-red400 round-8 smt-txt-size-1sm tab-txt-size-1sm top-padding-3 bottom-padding-3 left-padding-3 right-padding-3 ">Display Flex 3</h2>
                         </div>
 
                     </div>
